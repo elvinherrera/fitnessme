@@ -1,0 +1,5250 @@
+x/*
+ 
+===========================================================
+File Name: style.css      [Main Theme Styles]
+
+Project: Atma — Multipurpose Wellness | Sport | Yoga PSD Template
+Designer: Torbara
+Developer & Author: 3Jon
+Version: 1.0
+
+Last change: 15/11/2016 (15 Nov, 2016)
+Primary use: Sport Clubs, Health Clubs, Gyms, Fitness Centers, 
+			 Personal Trainers and other sport and health related clubs 
+			 and it is suitable for any kind of sport activity websites.
+
+============================================================== */
+
+/*		  INDEX
+==============================================================
+		- FONTS
+
+			COMMON STYLE RULES
+		------------------------------------------------------ 
+		- TYPO
+		- BUTTONS
+		- UTILITY
+		- FORMS
+		- SLIDE NAVS
+
+		- NAVIGATION AND LIST STYLES
+			- .contact-info
+			- .aside-navigation
+			- .blog-info-list
+
+		-THUMBNAILS STYLE
+			- .thumbnails-wrapper
+			- .classes-thumbnail-wellness
+			- .classes-thumbnail-sport
+			- .classes-thumbnail-yoga
+			- .trainers-thumbnail
+			- .events-thumbnail
+			- .products-thumbnail
+			- .posts-thumbnail
+
+		- COMMON SECTIONS
+			- TIMETABLE / SCHEDULES
+			- PRICE PACKAGES
+			- EVENTS CALENDER  / DATEPICKER
+			- PARTNERS
+			- EVENTS SCHEDULE
+			- TESTIMONIALS
+			- EVENTS DESCRIPTION SLIDESET
+			- TRAINER PROFILE
+			- SINGLE POST
+			- COMMENTS (BLOG SINGLE POST)
+			- WRITE COMMENTS FORM
+			- SHOP ASIDE | SIDEBAR
+			- PRICE RANGE slider
+			- SHOP DISPLAY FILTER
+			- PAGINATION
+			- SHOP PAGINATION
+
+		- HEADER
+			- MAIN NAVIGATION
+			- OFFCANVAS NAVIGATION
+			- CUSTOM NAVBAR
+			- HEADER CART AND ACCOUNT
+			- BREADCRUMBS
+
+		-FOOTER 
+			- MEGA FOOTER
+			    - FOOTER TOP 
+			    - FOOTER BOTTOM 
+			- TINY FOOTER
+
+		
+		TEMPLATE - WELLNESS
+		------------------------------------------------------ 
+		01. HOME
+		02. ABOUT
+		03. CLASSES
+		04. CLASSES DESCRIPTION
+		05. EVENTS
+		06. TRAINER PROFILE
+		07. BLOG
+		08. SINGLE POST
+		09. SHOP
+		10. CONTACT
+
+		TEMPLATE - SPORT
+		------------------------------------------------------ 
+		01. HOME
+		02. ABOUT
+		03. CLASSES
+		04. CLASSES DESCRIPTION
+		05. EVENTS
+		06. TRAINER PROFILE
+		07. BLOG
+		08. SINGLE POST
+		09. SHOP
+		10. CONTACT
+
+		TEMPLATE - YOGA
+		------------------------------------------------------ 
+		01. HOME
+		02. ABOUT
+		03. CLASSES
+		04. CLASSES DESCRIPTION
+		05. EVENTS
+		06. TRAINER PROFILE
+		07. BLOG
+		08. SINGLE POST
+		09. SHOP
+		10. CONTACT
+
+
+		SHOPPING CART PAGES 
+		------------------------------------------------------ 
+		- PRODUCT
+		- ACCOUNT
+		- ACCOUNT STATUS
+		- PAYMENT CHECKOUT
+		- SHOPPING BAG
+
+		OTHER PAGES 
+		------------------------------------------------------ 
+		- ERROR
+		- OFFLINE
+		- COMMING SOON
+	----------------------------------------------------------
+									
+											TOTAL PAGES = 38 
+								------------------------------
+								------------------------------
+
+		-MEDIA QUARIES
+		------------------------------------------------------
+		@media (min-width: 1300px)
+		@media (max-width: 1240px) and (min-width: 1212px)
+		@media (min-width: 1220px)
+		@media (max-width: 1170px)
+		@media (max-width: 1070px)
+		@media (max-width: 1042px) and (min-width: 960px)
+		@media (min-width: 960px)
+		@media (max-width: 959px)
+		@media (max-width: 850px)
+		@media (max-width: 767px)
+		@media (max-width: 650px)
+		@media (max-width: 767px) and (min-width: 550px)
+		@media (max-width: 550px)
+		@media (min-width: 480px) and (max-width: 767px)
+		@media (max-width: 549px) and (min-width: 479px)
+		@media (max-width: 479px)
+		@media (max-width: 399px)
+
+============================================================== */
+
+
+
+
+
+/*		FONTS 
+============================================================== */
+html {
+	font-family: 'josefin_sansregular', sans-serif;
+	color: #000;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'josefin_sansbold';
+	color: #000000;
+	text-transform: uppercase;
+}
+
+
+/*		COMMON STYLE RULES 
+==============================================================
+============================================================== */
+
+
+/*		TYPO 
+============================================================== */
+a {
+	color: inherit;
+}
+a:hover {
+	color: #ed344a!important;
+	text-decoration: none;
+}
+.uk-text-uppercase {
+	text-transform: uppercase!important;
+}
+.uk-text-capitalize {
+	text-transform: capitalize!important;
+}
+.h-1 {
+	font-size: 36px;	
+	margin-top: 28px;
+	vertical-align: middle;
+}
+.h-2 {
+	font-size: 30px;
+	line-height: 40px;
+	margin-bottom: 10px;
+	vertical-align: middle;
+}
+.h-3 {
+	font-size: 24px;
+	line-height: 36px;
+	margin: 0 0 10px;
+	vertical-align: middle;
+}
+.h-4 {
+	font-size: 18px;
+	line-height: 30px;
+	margin-bottom: 22px;
+	vertical-align: middle;
+}
+.h-5 {
+	font-size: 14px;
+	vertical-align: middle;
+	line-height: 18px;
+	margin: 0 0 8px;
+}
+.caption-title-18 {
+	font-family: 'josefin_sansbold';
+	font-size: 18px;
+	line-height: 30px;
+	margin: 0px 0px 3px;
+}
+
+.caption-text-16 {
+	font-family: 'josefin_sansregular';
+	font-size: 16px;
+	line-height: 18px;
+	margin: 8px 0px 0px;
+}
+.trainers-thumbnail h4,
+.trainers-thumbnail .trainers-name {
+	font-family: 'josefin_sansbold';
+	font-size: 18px;
+	line-height: 27px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin: 0px 0px 7px;
+}
+.trainers-thumbnail p,
+.trainers-title {
+	font-size: 16px;
+	line-height: 14px;
+	color: #ffffff;
+	margin: 16px 0 0;
+	text-transform: capitalize;
+}
+.text-white {
+	color: #ffffff;
+}
+.text-black {
+	color: #000000;
+}
+.post-author {
+	font-family: 'josefin_sansbold';
+	font-size: 16px;
+	line-height: 1;
+	color: #000;
+	text-transform: capitalize;
+}
+.post-date {
+	font-size: 16px;
+	line-height: 1;
+	color: #000;
+}
+.post-category {
+	font-family: 'josefin_sansbold';
+	font-size: 16px;
+	line-height: 1;
+	color: #000;
+	text-transform: capitalize;
+}
+.post-subtitle-red {
+	font-family: 'josefin_sansbold';
+	font-size: 16px;
+	line-height: 1;
+	color: #ed344a;
+	display: inline-block;
+}
+.more-tag {
+	font-family: 'josefin_sansbold';
+	font-size: 16px;
+	color: #000;
+
+}
+.text-fff {
+	color: #FFF;
+}
+.text-overview {
+	font-family: 'josefin_sansbold';
+	font-size: 14px;
+	line-height: 18px;
+	color: #fff;
+}
+.text-sixteen {
+	font-family: 'josefin_sansregular';
+	font-size: 16px;
+	line-height: 24px;
+	color: #000;
+}
+.text-slogan {
+	font-family: 'josefin_sansbold';
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+	margin: 0;
+}
+
+/*		BUTTONS 
+============================================================== */
+.btn-custom {
+	font-family: 'josefin_sansbold';
+	font-size: 14px;
+	line-height: 1;
+	width: 100%;
+	max-width: 198px;
+	height: 40px;
+	border: 1px solid #000;
+	color: #000;
+	background-color: transparent;
+	border-radius: 4px;
+	text-transform: capitalize;
+	transition-duration: 0.2s;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active {
+	background-color: #000;
+	color: #FFF;
+}
+.btn-custom-black {
+	font-family: 'josefin_sansbold';
+	font-size: 14px;
+	line-height: 1;
+	width: 100%;
+	max-width: 198px;
+	height: 40px;
+	color: #fff;
+	background-color: #000;
+	border: 1px solid #000;
+	border-radius: 4px;
+	display: block;	
+	text-transform: capitalize;
+	transition-duration: 0.2s;
+}
+
+.btn-custom-black:hover,
+.btn-custom-black:focus,
+.btn-custom-black:active {
+	background-color: #FFF;
+	color: #000;
+	border: 1px solid #000;
+}
+.btn-sport {
+	width: 80px;
+	height: 30px;
+}
+.btn-yoga {
+	max-width: 100px;
+}
+.btn-custom.btn-sport:hover {
+	color: #fff!important;
+}
+.btn-scheduleApp-sport {
+	border-color: #fff;
+	color: #fff;
+}
+
+.btn-scheduleApp-sport:hover,
+.btn-scheduleApp-sport:focus,
+.btn-scheduleApp-sport:active {
+	background-color: #fff;
+	color: #000;
+}
+.btn-custom-sale {
+	width: 80px;
+	height: 40px;
+	background-color: #f15d6e;
+	color: #ffffff;
+	border: 0px;
+	border-radius: 4px;
+	font-weight: bold;
+	text-transform: capitalize;
+	position: absolute;
+	margin-top: 10px;
+    margin-left: 10px;
+    z-index: 99;
+}
+.btn-custom-sale:hover {
+	background-color: #f15d6e;
+	color: #FFF;
+	opacity: 1;
+}
+.shop-item-price-old {
+	color: #666666;
+	text-decoration: line-through;
+	padding-right: 16px;
+	
+}
+.shop-item-price-new {
+	color: #ed344a;
+}
+
+
+/*		UTILITY 
+============================================================== */
+.title-line-sm {
+	width: 30px; 
+	height: 2px;
+	background-color: blue;
+    display: block;
+}
+.title-line-lg {
+	width: 50px;
+	height: 2px;
+	background-color: #ed344a;
+    display: block;
+}
+.title-line-block {
+	width: 50px;
+	height: 2px;
+	background-color: #000;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.title-line-inline {
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    display: inline-block;
+    margin-left: 5px!important;
+    vertical-align: middle;
+}
+.title-line-yoga {
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    display: inline-block;
+    vertical-align: middle;
+}
+.title-line-grey {
+	width: 50px; 
+	height: 2px;
+	background-color: #aaaab1;
+    display: block;
+}
+.border-b2 {
+	border-top: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	border-bottom: 1px solid rgba(0,0,0,0.3); 
+}
+.section-padding-top {
+	padding-top: 124px;
+}
+.section-padding-bottom {
+	padding-bottom: 132px;
+}
+.icon-left {
+	margin-right: 10px;
+	vertical-align: baseline;
+}
+.icon-right {
+	margin-left: 5px;
+
+}
+.light-sky-blue {
+	background-color: rgba(214,214,252, .3);
+}
+.overflow-hidden {
+	overflow: hidden;
+	margin-bottom: 12px;
+}
+.text-wrapper-80p {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.flex-row-wrap {
+	flex-flow: row wrap;
+}
+.container-fluid {
+	max-width: 100%;
+	box-sizing: border-box;
+	padding: 0 25px;
+}
+.uk-padding-right-remove {
+	padding-right: 0px!important;
+}
+.link-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.video-object {
+	object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.play-btn {
+    z-index: 999;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    width: 65px;
+    height: auto;
+}
+.play-btn:hover, 
+.play-btn:focus {
+	outline: 0;
+	opacity: .7;
+}
+.atma_video_btn_hover {
+	display:none;
+}
+.video-cover-wellness:hover .atma_video_btn_hover {
+	display:block;
+}
+/*		FORMS
+============================================================== */
+.form-custom .uk-grid-margin {
+	margin-top: 20px;
+}
+.uk-form .btn-custom {
+	font-family: 'josefin_sansbold';
+    font-size: 14px;
+    color: #000;
+    line-height: 1;
+	border-radius: 4px;
+}
+.uk-form .btn-custom:hover {
+	color: #fff;
+}
+.uk-form input.input-custom,
+.uk-form textarea {
+	padding: 0 15px 14px;
+    border: 1px solid grey;
+    border-top: 0px;
+    border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	font-size: 16px;
+   	line-height: 27px;
+   	color: rgba(0, 0, 0, 0.8);
+   	background: transparent;
+}
+.uk-form textarea {
+	line-height: 20px;
+	vertical-align: top;
+}
+.uk-form input.input-custom:focus,
+.uk-form textarea:focus {
+	background: transparent;
+}
+.uk-form-select select {
+	font-family: 'josefin_sansregular';
+	color: #000;
+	font-size: 16px;
+}
+.uk-form .input-custom {
+	position: relative;
+	z-index: 9999;
+}
+.uk-form .input-custom:not(textarea) {
+	height: 30px;
+	transition: .2s;
+}
+.uk-form .input-custom:not(textarea):focus {
+	padding: 0 15px!important;
+	transition: .2s;
+}
+.form-select-border {
+	border: 1px solid #B3B4B3;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+
+/*		SLIDE NAVS 
+============================================================== */
+
+.uk-slidenav-position .uk-slidenav {
+	display: block!important;
+}
+.uk-slidenav-position:hover .uk-slidenav {
+	display: block!important;
+	color: #000;
+} 
+.uk-slidenav {
+	color: #000;
+	width: auto;
+}
+.slidenav-yoga.uk-slidenav {
+	color: #AAACB1;
+}
+.uk-slidenav-position:hover .uk-slidenav.slidenav-yoga {
+	color: #AAACB1;
+}
+.uk-slidenav-position  .uk-slidenav-previous {
+	left: -55px;
+}
+.uk-slidenav-position  .uk-slidenav-next {
+	right: -55px;
+}
+.home-blog-wellness .uk-slidenav {
+	margin-top: 90px;
+}
+
+.posts-thumbnail .uk-slidenav,
+.classes-thumbnail-sport .uk-slidenav,
+.classes-thumbnail-yoga .uk-slidenav,
+.events-thumbnail .uk-slidenav {
+	top: 125px;
+}
+
+
+
+/* 		NAVIGATION AND LIST STYLES 
+============================================================== */
+.uk-list-line>li:nth-child(n+2) {
+	border-top: 0;
+}
+
+/*		.contact-info 
+============================================================== */
+.contact-info {
+	list-style: none;
+	padding-left: 0;
+}
+.contact-info li {
+	font-size: 16px;
+	line-height: 24px;
+	color: #000;
+	margin-bottom: 8px;
+}
+
+
+/*		.aside-navigation 
+============================================================== */
+aside h4,
+aside .h-4 {
+	margin-bottom: 4px;
+}
+.aside-navigation {
+	list-style: none;
+	padding-left: 0;
+	margin: 15px 0 40px;
+
+}
+.aside-navigation li {
+	padding: 8px 0px;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.aside-navigation li,
+.aside-navigation li a {
+	font-family: 'josefin_sansbold';
+	font-size: 16px;
+	line-height: 30px;
+	color: #000;
+	text-transform: capitalize;
+ } 
+.aside-navigation li.active a {
+	color: #ed344a;
+}
+.aside-navigation li i {
+	font-weight: bold;
+}
+
+/*		.blog-info-list
+============================================================== */
+.blog-info-list {
+	list-style: none;
+	padding-left: 0;
+	line-height: 26px;
+	margin: 8px 0;
+}
+.blog-info-list > li {
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+	border-right: 1px solid #fff;
+	line-height: 1;
+}
+.blog-info-list li:last-child {
+	border-right: 0!important;
+}
+.blog-info-list li:first-child {
+	padding-left: 0;
+}
+
+
+
+/*		THUMBNAILS
+==============================================================
+============================================================== */
+
+/*		.thumbnails-wrapper
+============================================================== */
+.thumbnails-wrapper {
+	display: block;
+	text-align: center;
+	
+}
+.thumbnails-wrapper figure {
+	display: inline-block;
+	max-width: 348px;
+}
+.thumb-link {
+	display: inline-block;
+}
+
+
+/*		.classes-thumbnail-wellness 
+============================================================== */
+.classes-thumbnail-wellness {
+	margin-top: 40px;
+}
+.classes-thumbnail-wellness .uk-overlay-panel {
+	padding: 20px 20px 26px 30px;
+}
+.classes-thumbnail-wellness h4,
+.classes-thumbnail-wellness .caption-title-18 {
+	margin: 0;
+}
+.classes-thumbnail-wellness p,
+.classes-thumbnail-wellness .caption-text-16 {
+	margin: 7px 0 0;
+}
+/*		.classes-thumbnail-sport
+============================================================== */
+
+.classes-thumbnail-sport {
+	margin-top: 56px;
+}
+.classes-thumbnail-sport figure {
+	text-align: center;
+	color: #000;
+}
+.classes-thumbnail-sport h4,
+.classes-thumbnail-sport .caption-title-18 {
+	margin: 0;
+}
+
+/*		.classes-thumbnail-yoga
+============================================================== */
+.classes-thumbnail-yoga {
+	margin: 54px 0 0;
+}
+.classes-thumbnail-yoga .caption-text-16
+.classes-thumbnail-yoga p {
+	margin: 4px 0px 0px;
+}
+
+
+/*		.trainers-thumbnail 
+============================================================== */
+
+.trainers-thumbnail {
+	margin-top: 40px;
+}
+.trainers-thumbnail .thumbnails-wrapper figure {
+	max-width: 256px;
+
+}
+.trainers-thumbnail figure > img {
+	border-radius: 4px;
+}
+.trainers-thumbnail .uk-overlay-panel {
+	border-radius: 4px;
+}
+.trainers-thumbnail figcaption {
+	padding: 43px 20px 47px 20px;
+}
+
+
+/*		.events-thumbnail
+============================================================== */
+
+.events-thumbnail {
+	margin-top: 40px;
+}
+.events-thumbnail h5,
+.events-thumbnail .h-5,
+.events-detail h5, 
+.events-detail .h-5 {
+	font-size: 14px;
+    vertical-align: middle;
+    line-height: 18px;
+    margin: 0 0 7px;
+}
+.events-thumbnail p,
+.events-detail p {
+	font-size: 14px;
+	color: #000;
+	line-height: 1;
+	margin: 10px 0 0;
+}
+.events-thumbnail figure {
+	max-width: 364px;
+	margin: 0 auto;
+}
+.events-thumbnail .overflow-hidden {
+	margin-bottom: 20px;
+}
+
+/*		.products-thumbnail
+============================================================== */
+.products-thumbnail .h-5, 
+.products-thumbnail h5 {
+	padding: 0 10px;
+    min-height: 35px;
+    text-align: center;
+    margin: 0px 0 5px;
+}
+.products-thumbnail button,
+.products-thumbnail .btn-custom {
+	max-width: 150px;
+	margin-bottom: 0;
+}
+.products-thumbnail .title-line-sm {
+	margin-left: auto;
+	margin-right: auto;
+}
+.products-thumbnail p,
+.shop-item-price {
+	font-size: 24px;
+    line-height: 1;
+    font-weight: 900;
+    color: #000;
+    margin: 12px 0 18px;
+}
+.products-thumbnail .thumbnails-wrapper figure {
+	max-width: 198px;
+}
+.products-thumbnail figure:hover .btn-custom-sale {
+	opacity: .7;
+}
+
+
+/*		.posts-thumbnail
+============================================================== */
+.posts-thumbnail {
+	margin-top: 50px;
+}
+.posts-thumbnail h4,
+.posts-thumbnail .caption-title-18 {
+	margin: 6px 0px 14px;
+	line-height: 24px;
+	text-indent: -1px;
+}
+.posts-thumbnail .text-sixteen,
+.posts-thumbnail p 	{
+	margin: 10px 0 11px; 
+}
+.posts-thumbnail .blog-info-list {
+	margin: 0;
+}
+.posts-thumbnail .blog-info-list > li {
+	border-right: 1px solid #666666;
+}
+.posts-thumbnail .overflow-hidden {
+	margin-bottom: 10px;
+}
+
+
+
+/*		COMMON SECTIONS 
+==============================================================
+============================================================== */
+
+/*		TIMETABLE / SCHEDULES 
+============================================================== */
+.time-table {
+	border: 3px solid #ed344a;
+	border-collapse: separate;
+	border-radius: 6px;
+	margin: 47px 0 0;
+}
+.time-table.timetable-yoga {
+	border: 3px solid #d6d6fc;
+}
+.time-table thead {
+	background-color: #ed344a;
+	color: #fff;
+}
+.time-table.timetable-yoga thead {
+	background-color: #e2e2fd;
+	color: #000;
+}
+.time-table tbody tr > td:first-child {
+	font-family: 'josefin_sansbold';
+	font-size: 18px;
+	line-height: 18px;
+	color: #222222;
+	padding: 32px 40px;
+}
+.time-table th {
+	padding: 40px 0px 10px 0px;
+}
+.time-table thead tr th {
+	left: -19px;
+}
+.time-table tbody tr:nth-of-type(odd) {
+	background: #f0f0f6;
+}
+.time-table.timetable-yoga tbody tr:nth-of-type(odd) {
+	background: #f3f3fe;
+}
+.time-table tbody td {
+	padding: 25px 0px;
+}
+.time-table tbody tr td:nth-of-type(even) {
+	border-left: 1px solid #dcdcdc;
+}
+.time-table tbody tr td:nth-of-type(odd) {
+	border-left: 1px solid #eaeaea;
+}
+.time-table thead tr td:nth-of-type(even) {
+	border-left: 1px solid #dcdcdc;
+	padding-top: 12px;
+}
+.time-table thead tr td:nth-of-type(odd) {
+	border-left: 1px solid #eaeaea;
+	padding-top: 12px;
+}
+.time-table thead tr th:nth-of-type(even) {
+	padding-bottom: 20px;
+}
+.time-table thead tr td:nth-of-type(1){
+	border-left: 0px;
+}
+.event-tag > span {
+	cursor: pointer;
+	transition: box-shadow .4s;
+}
+.event-tag > span:hover {
+	box-shadow: 0px 3px 3px #999999;
+}
+.time-table .event-tag span {
+	font-size: 16px;
+	line-height: 24px;
+	color: #1d1f29;
+	text-transform: capitalize;
+	border: 1px solid #dcdcdc;
+	border-radius: 3px;
+	background-color: #FFF;
+	width: 100%;
+	display: inline-block;
+	padding-top: 9px;
+    padding-bottom: 5px;
+    text-align: center;
+} 
+.overflow-container {
+	max-width: 100%;
+	overflow: auto;
+}
+.overflow-container > table {
+	min-width: 930px;
+}
+
+
+
+/*		PRICE PACKAGES
+============================================================== */
+.package-panel {
+	margin-top: 52px;
+}
+.package-panel .panel-custom * {
+	text-align: center;
+}
+.package-panel .panel-custom {
+	border: 2px solid #000;
+	border-radius: 4px;
+	transition: border .2s, margin-top .4s;
+}
+.package-panel .package-panel-header {
+	padding: 25px 0px;
+	background-color: #000; 
+	color: #fff;
+	margin: 0px;
+	font-size: 24px;
+	line-height: 30px;
+	transition: background-color .3s;
+}
+.price-tag {
+	font-size: 60px;
+	line-height: 50px;
+	color: #ed344a;
+	margin-top: 58px;
+	margin-bottom: 36px;
+}
+.package-panel .title-line-lg {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #000;
+	margin-bottom: 30px;
+}
+.packages-icon {
+	line-height: 1;
+	margin-bottom: 8px;
+}
+.package-panel .uk-icon-check {
+	color: #ed344a;
+	font-size: 18px;
+}
+.package-panel .uk-icon-close {
+	color: #888888;
+	font-size: 18px;
+}
+.package-panel .feature-active {
+	font-size: 18px;
+	line-height: 16px;
+	color: #000;
+	margin-bottom: 46px;
+	margin-top: 10px;
+}
+.package-panel .feature-inactive {
+	font-size: 18px;
+	line-height: 16px;
+	color: #888888;
+	margin-bottom: 46px;
+	margin-top: 10px;
+}
+.package-panel .uk-panel .btn-custom-black {
+	margin: 67px auto 62px;
+	height: 50px;
+	font-size: 18px;
+}
+.panel-custom.base {
+	border: 2px solid #ed344a;
+}
+.panel-custom.base .package-panel-header {
+	background-color: #ed344a;
+}
+.panel-custom:nth-child(1):hover .package-panel-header,
+.panel-custom:nth-child(3):hover .package-panel-header {
+	background-color: #ed344a;
+}
+.panel-custom:nth-child(1):hover,
+.panel-custom:nth-child(3):hover {
+	border: 2px solid #ed344a;
+	margin-top: -10px;
+}
+
+
+/*		EVENTS CALENDER  / DATEPICKER
+============================================================== */
+.events-calendar {
+	margin-top: 52px;
+}
+.date-picker-custom {
+	margin-top: 20px;
+}
+.ui-datepicker table {
+	font-family: 'josefin_sansregular';
+	color: #000000;
+	font-size: 16px;
+}
+.date-picker-custom .ui-widget.ui-widget-content {
+	border: 0!important;
+	width: 100%;
+}
+.ui-datepicker .ui-widget-header {
+	background: transparent;
+	border: 0;
+}
+.ui-datepicker .ui-state-default, 
+.ui-datepicker .ui-widget-content .ui-state-default {
+	background: transparent;
+	border: 0;
+	text-align: center;
+}
+.ui-datepicker .ui-state-active, 
+.ui-datepicker.ui-widget-content .ui-state-active {
+	font-weight: bold!important;
+	color: #000!important;
+}
+.ui-datepicker select::-ms-expand {
+        -moz-appearance: none;
+        -webkit-appearance:none;
+         display: none;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	-moz-appearance: none;
+    -webkit-appearance:none;
+    border: 0;
+    width: auto;
+}
+.ui-datepicker select.ui-datepicker-month {
+	float: left;
+
+}
+.ui-datepicker select.ui-datepicker-year {
+	float: right;
+}
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	left: 64px;
+}
+.ui-datepicker-next span {
+	background-image: url('../../images/arrow-right.png')!important;
+	background-position: 50%;
+}
+
+.ui-datepicker-prev span {
+	background-image: url('../../images/arrow-left.png')!important;
+	background-position: 50%;
+}
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-prev {
+	background: transparent;
+	border: 0px solid;
+}
+.ui-datepicker .ui-state-active, 
+.ui-datepicker.ui-widget-content .ui-state-active {
+	color: #ed344a!important;
+}
+
+/*		PARTNERS
+============================================================== */
+.partners {
+	background-color: #f3f3f7;
+	padding: 60px 0 52px;
+}
+.partners .uk-slideset li > figure {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 88px;
+}
+.partners figure {
+	text-align: center;
+}
+.achivements-counter {
+	border: 1px solid #fff;
+	border-radius: 4px;
+    padding: 45px 72px;
+}
+.achivements-counts {
+	font-size: 60px;
+	line-height: 40px;
+	color: #ed344a;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.achivements-titles {
+	font-size: 18px;
+	line-height: 1;
+	color: #ffffff;
+	margin: 25px 0px 0px;
+	text-align: center;
+}
+.achivements .title-line-lg {
+	background-color: #FFF;
+}
+
+
+
+
+/*		EVENTS SCHEDULE
+============================================================== */
+.events-description-schedule {
+    padding: 25px 0px 16px 75px;
+    margin: 26px 0 0;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.events-description-schedule .contact-info li {
+	margin-bottom: 10px;
+}
+
+
+/*		TESTIMONIALS
+============================================================== */
+.clients-quote {
+	font-family: 'josefin_sanslight_italic';
+	font-size: 18px;
+	line-height: 24px;
+	margin: 25px 0 25px;
+	color: #FFF;
+}
+.clients-image img {	
+    border-radius: 4px; 
+    width: 65px;
+    height: 65px;
+}
+.clients-details {
+	padding-left: 24px;
+}
+.client-name {
+	font-family: 'josefin_sansbold';
+	font-size: 18px;
+	line-height: 1;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 0;
+}
+.client-title {
+	font-size: 14px;
+	line-height: 1;
+	margin-top: 10px;
+	color: #ffffff;
+	margin-bottom: 0;
+}
+
+
+/*	EVENTS DESCRIPTION SLIDESET
+============================================================== */
+.events-description-slideset {
+	width: 89%;
+	margin: 30px auto 18px;
+}
+
+
+/*  TRAINER PROFILE 
+============================================================== */
+.profile h2, 
+.profile .h-2 {
+	margin: 0 0 24px;
+}
+
+.trainer-profile-sidebar {
+	text-align: center;
+}
+.trainer-profile-sidebar-wrapper {
+	display: inline-block;
+}	 
+.trainer-social-profiles {
+	margin-left: 0px;
+	text-align: center;
+}
+.profile .uk-article-divider {
+	border-top: 1px solid rgba(0,0,0,.3);
+	margin: 18px 0 20px;
+}
+.uk-article-lead {
+	font-size: 16px;
+	line-height: 1;
+	margin: 0;
+	color: #000000;
+}
+.profile img[alt="About Trainer"] {
+	margin-top: 7px;
+}
+.trainer-social-profiles {
+	text-align: center;
+	margin-top: 25px;
+	padding-left: 0;
+}
+.trainer-social-profiles li a {
+	display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    margin-right: 16px;    
+    border: 1px solid #2d2d2d;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.trainer-social-profiles li i {
+	font-size: 18px;
+	color: #000;
+	vertical-align: middle;
+    line-height: 40px;
+    display: block;
+}
+.trainer-social-profiles li a:hover,
+.trainer-social-profiles li a:focus,
+.trainer-social-profiles li a:active {
+	background-color: #ed344a;
+
+}
+.trainer-social-profiles li i:hover,
+.trainer-social-profiles li i:focus,
+.trainer-social-profiles li i:active {
+	color: #fff;
+}
+
+
+
+/*		SINGLE POST
+==============================================================
+============================================================== */
+.single-post-body {
+	margin-top: 30px;
+}
+.single-post-article {
+	margin-left: auto;
+	margin-right: auto;
+}
+.single-post-content .blog-info-list {
+	padding: 15px 0px;
+	border-top: 1px solid rgba(0,0,0,0.3);
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	margin: 30px 0px 0px;
+}
+.single-post-content .blog-info-list li {
+	border-right: 1px solid #666666;
+}
+.single-post-article blockquote {
+	line-height: 24px;
+	border-left: 5px solid #ed344a;
+	padding: 35px 42px 35px 28px;
+	background-color: #f5f5f9;
+	margin: 25px 0 20px;
+}
+.single-post-article blockquote > p {
+	margin: 0 0 6px;
+}
+.single-post-list li {
+	line-height: 18px;
+	margin: 0 0 5px;					
+}
+.single-post-list {
+	padding-left: 20px;
+}
+.single-post-inner-image {
+	margin-bottom: 18px!important;
+}
+/*		COMMENTS (SINGLE POST)
+============================================================== */
+.comments {
+	padding: 52px 0 20px;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.comments .h-4 {
+	margin-bottom: 6px;
+}
+.comments .uk-comment-list {
+	margin-top: 28px;
+}
+.comments .blog-info-list {
+	margin: 8px 0 2px;
+}
+.comments .blog-info-list i {
+	font-weight: bold;
+}
+.comments .blog-info-list li {
+	border-right-color: #666666;
+}
+.comments-profile-img img {
+	border-radius: 4px;
+}
+.comments .uk-comment {
+	margin-bottom: 30px;
+}
+.post-comment-body {
+	padding: 17px 48px 23px 30px;
+	border-radius: 4px;
+}
+.post-comment-body > p {
+	margin-top: 10px;
+}
+.post-comment-body .blog-info-list + p {
+	margin: 2px 0 10px;
+}
+
+
+/*		WRITE COMMENTS FORM 
+============================================================== */
+.single-post-article .form-custom {
+	margin-top: 45px;
+}
+.write-comment-form {
+	padding-top: 60px;
+	padding-bottom: 110px;
+}
+.write-comment-form .h-4 {
+	font-size: 18px;
+	line-height: 1;
+	margin-bottom: 18px;
+}
+.write-comment-form textarea {
+	height: 117px;
+	margin-bottom: 20px;
+}
+.form-custom .uk-grid-margin {
+    margin-top: 33px;
+}
+.form-custom .form-btn-grid {
+	margin-top: 20px;
+}
+input.btn-custom-black {
+	max-width: 150px;
+	border-radius: 4px;
+	color: #fff;
+	font-family: 'josefin_sansbold';
+    font-size: 14px;
+}
+input.btn-custom-black:hover,
+input.btn-custom-black:focus,
+input.btn-custom-black:active {
+	color: #000;
+}
+
+
+
+/*		SHOP ASIDE | SIDEBAR  
+============================================================== */
+.wall {
+	background-color: #f5f5f9;
+	border-radius: 4px;
+	font-size: 16px;
+}
+.shop .wall {
+	background-color: #f5f5f9;
+	padding: 6px 10px 9px 10px;
+	border-radius: 4px;
+	font-size: 16px;
+}
+.shop aside .h-4 {
+	margin: 20px 0px 0px;
+}
+.shop .aside-navigation {
+	margin: 0px 0px 52px 0px;
+}
+.products-available {
+	font-family: 'josefin_sansbold';
+	font-size: 14px;
+	padding-left: 10px;
+}
+
+
+
+/*		PRICE RANGE SLIDER
+============================================================== */
+.price-range-slider {
+	margin: 24px 0 94px;
+	height: 5px;
+	background: #eeeef5;
+	border-radius: 0;
+}
+.price-range-slider .ui-state-default, 
+.price-range-slider .ui-widget-content .ui-state-default, 
+.price-range-slider .ui-widget-header .ui-state-default {
+	width: 6px;
+	height: 12px;
+	border: 1px solid #ed344a;
+	background: #ed344a;
+	border-radius: 4px;
+	margin: 0;
+}
+.ui-slider .ui-slider-range {
+	background: #000;
+	border-radius: 0;
+}
+.ui-slider-tip {
+	display: block;
+    visibility: visible;
+    opacity: 1;
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	position: absolute;
+	top: 18px;
+	background-color: transparent;
+	border: 0px;
+}
+.price-range-slider .ui-slider-tip:before,
+.price-range-slider .ui-slider-tip:after {
+	display: none!important;
+}
+
+
+
+
+/* 			SHOP DISPLAY FILTER
+================================================================== */
+.shop.section-padding-top {
+	padding-top: 128px;
+}
+.shop-display-results {
+	font-size: 16px;
+	padding-bottom: 33px;
+	border-bottom: 1px solid #e0e1e3;
+}
+.shop-display-results .uk-form-select {
+	width: 140px;
+    padding: 2px 10px;
+   
+}
+.shop-display-results li a,
+.shop-display-results button {
+	font-size: 16px;
+	color: #000;
+}
+.shop-display-results li.active a {
+	font-weight: bold;
+}
+.shop-display-results .blog-info-list {
+	margin: 0;
+
+}
+.shop .blog-info-list > li {
+	border-right-color: #000;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.shop .blog-info-list > li:first-child {
+	padding-left: 0;
+}
+
+.shop .blog-info-list > li:last-child {
+	border-right: 0;
+}
+.shop .blog-info-list ul {
+	display: inline-block;
+	padding-left: 0;
+}
+.shop .blog-info-list ul li {
+	display: inline-block;
+	padding-left: 15px;
+}
+.shop .uk-button-dropdown button {
+	background-color: transparent;
+}
+.shop .products-thumbnail {
+	padding-top: 30px;
+	padding-bottom: 60px;
+	border-bottom: 1px solid #e0e1e3;
+}
+.shop .products-thumbnail .uk-grid-margin {
+	margin-top: 60px;
+}
+.shop .aside-navigation > li > a {
+	font-family: 'josefin_sansregular';
+}
+.shop .aside-navigation > li:first-child {
+	padding: 0 0 8px;
+}
+.shop .aside-navigation > li.active > a {
+	font-weight: bold;
+}
+
+/*		PAGINATION
+============================================================== */
+.pagination {
+	margin-bottom: 0;
+}
+.pagination li a {
+	font-family: 'josefin_sansregular';
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    background-color: transparent;
+    padding: 5px 7px;
+}
+.pagination li a:hover,
+.pagination li a:focus {
+	background-color: transparent;
+	color: #000000;
+	box-shadow: -1px 1px 2px 1px #c1c1c1;
+	border-radius: 5px;
+	transition: box-shadow .2s;
+}
+.blog-pagination {
+	margin: 30px 0 0;
+}
+
+.btn-active > a {
+	border: 1px solid #000000;
+	font-weight: bold;
+	border-radius: 4px;
+}
+
+
+/*		SHOP PAGINATION
+============================================================== */
+.shop .pagination {
+	margin-top: 30px;
+}
+
+.shop .pagination li a {
+	font-size: 16px;
+	background-color: transparent;
+	color: #000;
+}
+.shop .pagination li.active a {
+	font-weight: bold;
+}
+
+
+
+/*		HEADER
+==============================================================
+============================================================== */
+
+/*		MAIN NAVIGATION
+============================================================== */
+.main-header .uk-navbar-nav > li > a {
+	font-family: 'josefin_sansregular';
+	font-size: 18px;
+	line-height: 40px;
+	font-weight: normal;
+	text-transform: capitalize;
+	color: #000000;
+	background-color: transparent;
+	padding: 0 16px;
+
+}
+.main-header .uk-nav-navbar > li {
+	margin-bottom: 1px;
+}
+.main-header .uk-nav-navbar > li > a {
+	font-family: 'josefin_sansbold';
+	font-size:14px; 
+	line-height: 27px;
+	text-transform: capitalize;
+	text-align: center;
+	color: #ffffff;
+	background-color:rgba(0, 0, 0, .7);
+	border-radius: 4px;
+}
+.main-header .uk-dropdown {
+	background-color: transparent;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.main-header .uk-dropdown-small .uk-nav {
+	margin: 0px 16px;
+}
+.main-header .uk-icon-plus {
+	padding-left: 5px;
+	font-size: 10px;
+}
+.uk-navbar-brand > img {
+    margin-left: -125px;
+    margin-top: -25px;
+    width: 300px;
+    height: 130px;
+}		
+.uk-navbar-nav > li:last-child > a {
+	padding-right: 0;
+}
+
+/* OFFCANVAS NAVIGATION
+---------------------------------------------*/
+.uk-offcanvas .uk-nav-offcanvas > li > a {
+	font-family: 'josefin_sansregular';
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+}
+.uk-nav-offcanvas > li > .active {
+	color: #ed344a!important;
+}
+.uk-nav-offcanvas ul a {
+	font-family: 'josefin_sansregular';
+	font-size: 14px;
+	color: #FFF;
+	text-transform: capitalize;
+}
+
+
+/* CUSTOM NAVBAR  
+---------------------------------------------*/
+.main-header .uk-navbar {
+	background-color: #FFF;
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+.main-header .main-nav-sport {
+	position: absolute;
+	top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, .7);
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+.main-header .main-nav-sport .uk-navbar-nav > li > a {
+	color: #FFF;
+}
+.main-header .main-nav-yoga {
+	position: absolute;
+	top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, .7);
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+.active,
+.active * {
+	color: #ed344a!important;
+}
+
+
+/* HEADER CART AND ACCOUNT ICON  
+---------------------------------------------*/
+.header-cart .uk-dropdown {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 1px -2px 9px 1px #666666;
+}
+.header-cart-dropdown {
+	cursor: pointer;
+	background-color: #fff;
+	transition: background-color .3s;
+}
+.header-cart-dropdown:hover {
+	background-color: #e4f2f5;
+	transition: background-color .3s;
+}
+.header-cart-dropdown img {
+	width: 40px;
+	height: 72px;
+}
+.header-cart-dropdown .h-5 {
+	line-height: 12px;
+	margin-bottom: 6px;
+	font-size: 10px;
+}
+.header-cart-dropdown p {
+	font-size: 12px;
+	line-height: 1;
+	margin: 10px 0 0;
+}
+.header-cart .aside-navigation {
+	margin: 0 0 20px;
+}
+.header-cart .aside-navigation + p {
+	font-family: 'josefin_sansbold';
+	color: #000;
+	font-size: 12px;
+	margin: 20px 0 30px;
+}
+.header-cart .aside-navigation li {
+	padding: 20px 0;
+	margin: 0;
+}
+.header-cart .aside-navigation li:first-child {
+	padding: 0 0 20px; 
+}
+.header-cart-dropdown > div:first-child {
+	padding-left: 0;
+}
+.header-cart > a.active > img,
+.header-cart > a:hover > img {
+	visibility: hidden;
+}
+.header-cart > a.active,
+.header-cart > a:hover,
+.uk-nav-offcanvas .header-cart > a.active,
+.uk-nav-offcanvas .header-cart > a:hover {
+	background: url('../../images/cart-icon-hover.png') 50% 12px/22px 20px no-repeat!important;
+}
+.header-account > a.active > img,
+.header-account > a:hover > img {
+	visibility: hidden;
+}
+.header-account > a.active,
+.header-account > a:hover,
+.uk-nav-offcanvas .header-account > a.active,
+.uk-nav-offcanvas .header-account > a:hover {
+	background: url('../../images/account-icon-hover.png') 100% 12px/19px 20px no-repeat!important;
+}
+.uk-nav-offcanvas .header-cart > a.active,
+.uk-nav-offcanvas .header-cart > a:hover {
+	background: #404040 url('../../images/cart-icon-hover.png') 15px 12px/22px 20px no-repeat!important;
+}
+.uk-nav-offcanvas .header-account > a.active,
+.uk-nav-offcanvas .header-account > a:hover {
+	background: #404040 url('../../images/account-icon-hover.png') 15px 12px/19px 20px no-repeat!important;
+}
+
+
+/*		BREADCRUMBS
+============================================================== */
+.breadcrumbs-wrapper {
+	padding-top: 112px;
+}
+.main-header .header-breadcrumbs .uk-breadcrumb {
+	line-height: 1;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.main-header .header-breadcrumbs ul.uk-breadcrumb li,
+.main-header .header-breadcrumbs ul.uk-breadcrumb li a {
+	font-family: 'josefin_sansbold';
+	font-size: 16px;
+	line-height: 14px;
+	color: #ffffff;
+	text-transform: capitalize;
+}	
+.main-header .header-breadcrumbs .title-line-lg {
+	width: 100%;
+	max-width: 110px;
+	margin: 0 auto;
+}
+.main-header .header-breadcrumbs .h-1 {
+	color: #FFF;
+	text-align: center;
+	margin: 23px 0 0;
+}
+
+
+
+
+/*		FOOTER - MEGA FOOTER
+==============================================================
+============================================================== */
+
+#gmap_canvas {
+	width: 100%;
+	height: auto;
+}
+.mega-footer {
+	padding-top: 124px;
+	background-color: #000;
+	color: #ebebeb;
+}
+.mega-footer .h-4 {
+	color: #fff;
+}
+.footer-top {
+	padding-bottom: 40px;
+	border-bottom: 1px solid #4d4d4d;
+}
+.mega-footer .contact-info {
+	color: #ebebeb;
+}
+.mega-footer .uk-icon-angle-right {
+	font-weight: bold;
+}
+.mega-footer .contact-info li {
+	color: #fff;
+}
+
+
+
+/*		WORKING HOURS 
+============================================================== */
+.working-hour {
+	margin-top: 30px;
+}
+.working-hour h4,
+.working-hour .h-4 {
+	margin-bottom: 5px;
+}
+.working-hour .contact-info {
+	margin: 5px 0 15px;
+}
+.working-hour .contact-info li {
+	margin-bottom: 2px;
+}
+
+/*		FOOTER CLASSES 
+============================================================== */
+.footer-classes {
+	margin-top: 38px;
+}
+.footer-classes h4 {
+	width: 100%;
+	margin-bottom: 14px;
+}
+.footer-classes a {
+	color: #d6d6d6;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.social-networks + h4,
+.social-networks + .h-4 {
+	margin-top: 30px;
+}
+/*		COPYRIGHT |	FOOTER BOTTOM SECTION  
+============================================================== */
+.footer-bottom {
+	padding-bottom: 52px;
+}
+.footer-bottom .uk-float-left p{
+	margin-top: 35px;
+}
+.footer-bottom .uk-float-right {
+	text-align: right;
+}
+.footer-bottom .uk-float-right a {
+	text-decoration: none;
+	color: #ebebeb;
+}
+.footer-bottom .uk-float-right p {
+		text-align: right;
+		margin-bottom: 0;
+}
+.footer-bottom .uk-float-right p:nth-child(1) {
+	margin-top: 31px;
+}
+.footer-bottom .uk-float-right p:nth-child(2) {
+	margin-top: 0;
+	font-size: 14px;
+	line-height: 24px;
+	color: #ebebeb;
+}
+.footer-bottom i.uk-icon-angle-up {
+	font-size: 32px;
+	line-height: 1;
+	padding-right: 21px;
+}
+.footer-bottom a[href="#back-to-top"] {
+	display: inline-block;
+}
+
+
+/*		FOOTER - TINY FOOTER
+==============================================================
+============================================================== */
+
+.tiny-footer .nav-footer {
+	padding-bottom: 30px;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	text-align: center;
+	line-height: 1;
+	margin: 6px 0 0;
+}
+.tiny-footer .nav-footer ul {
+	float: none;
+	display: inline-block;
+}
+.tiny-footer .nav-footer ul li a {
+	font-family: 'josefin_sansbold';
+	font-size: 14px;
+	line-height: 1;
+	text-transform: capitalize;
+	color: #000;
+	cursor: pointer;
+}
+.tiny-footer .nav-footer ul li:hover a,
+.tiny-footer .nav-footer ul li:focus a,
+.tiny-footer .nav-footer ul li:active a {
+	background-color: transparent;
+}
+.tiny-footer .nav-footer ul li a:active,
+.tiny-footer .nav-footer ul li a:focus {
+	background-color: transparent;
+}
+.tiny-footer .copyright {
+	padding: 60px 0 98px;
+	text-align: center;
+}
+.tiny-footer .copyright p {
+	font-family: 'Times New Roman';
+	font-size: 14px;
+	color: #000;
+	line-height: 1;
+	margin: 0;
+}
+
+
+
+
+/*		WELLNESS
+===========================================================================================
+=========================================================================================== */
+
+/*		HOME - WELLNESS
+==============================================================
+============================================================== */
+
+
+/*		HOME - SLIDESHOW 
+============================================================== */
+
+.home-slideshow-wellness h1 {
+	font-family: 'josefin_sansbold';
+	font-size: 150px;
+	line-height: 105px;
+	color: #ffffff;
+	margin-bottom: 45px;
+
+}
+.home-slideshow-wellness h3 {
+	font-family: 'josefin_sansbold';
+	font-size: 60px;
+	line-height: 48px;
+	color: #ffffff;
+	margin: 0px;
+}
+
+
+/*		DOT NAV - SLIDESHOW  
+============================================================== */
+.home-slideshow-wellness .uk-dotnav > * > * {
+	width: 21px;
+	height: 20px;
+	background-color: rgba(255,255,255,.7);
+	border-radius: 4px;
+	border: 1px solid #000;
+}
+.home-slideshow-wellness .uk-dotnav-contrast> .uk-active > * {
+	background-color: rgba(237,52,34,.6);
+	border: 0px;
+}
+.home-slideshow-wellness .uk-dotnav {
+	bottom: 100px;
+}
+
+
+
+
+/*		HOME - ABOUT | WELLNESS
+============================================================== */
+/* ABOUT - SLIDESET 
+-------------------------------------------------------------- */
+.about-slideset {
+	margin-top: 40px;
+}
+.about-slideset figure {
+	cursor: pointer;
+}
+.about-slideset h3,
+.about-slideset .h-3 {
+	margin: 0 0 8px;
+}
+.about-slideset p {
+	margin: 13px 0 9px;
+}
+.about-slideset .uk-overlay-panel {
+	padding: 30px 40px 30px 30px;
+}
+
+
+/*		HOME - CLASSES
+============================================================== */
+.simple-classes {
+	margin-top: 40px;
+}
+.simple-classes h5 {
+	margin: 12px 0 15px;
+}
+.simple-classes p {
+	padding-right: 20px;
+	line-height: 18px;
+}
+
+/*		HOME - EVENTS 
+============================================================== */
+.next-events-wellness .text-overview {
+	color: #000;
+}
+.next-events-wellness .events-thumbnail {
+		padding-bottom: 50px;
+		margin-bottom: 50px;
+}
+.next-events-wellness .events-detail {
+	padding-left: 20px;
+}
+.video-cover-wellness {
+	background-image: url('../../images/images_wellness/video.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.next-events-wellness .overflow-hidden {
+	margin-bottom: 20px;
+}
+
+
+/*		HOME - BLOG 
+============================================================== */
+.home-blog-wellness .uk-slideshow > li:nth-child(1) {
+	background-image:url('../../images/images_wellness/blog_slide_01_bg.jpg');
+}
+.home-blog-wellness .uk-slideshow > li:nth-child(2) {
+	background-image:url('../../images/images_wellness/blog_slide_02_bg.jpg');
+}
+.home-blog-wellness h2 {	
+	margin-top: 60px;
+}
+.home-blog-wellness h2 + .title-line-lg {
+	margin-bottom: 40px;
+}
+.blog-info {
+	padding: 40px 50px 38px 40px;
+}
+.blog-info .text-overview {
+	margin: 4px 0 10px;
+}
+.home-blog-wellness figcaption {
+	margin-bottom: 50px;		
+}
+.blog-info .post-author, 
+.blog-info .post-date,
+.blog-info .post-category {
+	font-size: 14px;
+	color: #fff;
+}
+.blog-overlay-image {
+	max-height: 675px;
+}
+.home-blog-wellness.uk-slidenav-position .uk-slidenav {
+	top: 60%;
+}
+.home-blog-wellness  .uk-slidenav-previous {
+	left: 15px;
+}
+.home-blog-wellness  .uk-slidenav-next {
+	right: 15px;
+} 
+
+
+
+/*		HOME - SHOP 
+============================================================== */
+.home-shop-wellness {
+	background-color: #ffffff;
+	margin-bottom: 15px;
+}
+.home-shop-wellness .products-thumbnail {
+	margin-top: 40px;
+}
+
+
+
+/*		ABOUT - WELLNESS
+==============================================================
+============================================================== */
+
+.about-breadcrumbs-wellness {
+	background-image: url('../../images/images_wellness/about_breadcrumbs.jpg');
+}
+
+
+
+/*		ACHIVEMENTS
+============================================================== */
+.achivements-bg-wellness {
+	background-image: url('../../images/images_wellness/achivements_bg.jpg');
+}
+
+
+ 
+
+/*		PHILOSOPHY-wellness
+============================================================== */
+.philosophy {
+	padding-top: 112px;
+}
+.text-slogan + p {
+	margin: 0;
+}
+.philosophy h2,
+.philosophy .h-2 {
+	margin: 0 0 7px;
+}
+
+
+
+
+/*		TESTIMONIALS
+============================================================== */
+.testimonials-wellness {
+	color: #ffffff;
+}
+.testimonials-wellness .uk-slideshow > li:nth-of-type(1) > div {
+	background-image: url('../../images/images_wellness/testimonials_bg_01.jpg');
+	background-repeat: no-repeat;
+}
+.testimonials-wellness .uk-slideshow > li:nth-of-type(2) > div {
+	background-image: url('../../images/images_wellness/testimonials_bg_02.jpg');
+	background-repeat: no-repeat;
+}
+.testimonials-slider-area-wellness {
+	max-width: 1013px;
+}
+.testimonials-wellness .h-2 {
+	 color: #ffffff;
+}
+.testimonials-wellness .uk-dotnav {
+	margin-left: 2%;
+} 
+.testimonials-wellness .uk-dotnav > * > * {
+    width: 21px;
+    height: 20px;
+    background-color: rgba(255,255,255,.7);
+    border-radius: 4px;
+    border: 1px solid #000;
+}
+.testimonials-wellness .uk-dotnav-contrast> .uk-active > * {
+	background-color: rgba(237,52,34,.6);
+    border: 0px;
+}
+
+
+
+
+/*		CLASSES - WELLNESS
+==============================================================
+============================================================== */
+.classes-breadcrumbs-wellness {
+	background-image: url('../../images/images_wellness/classes_wellness_breadcrumbs.jpg');
+}
+.popular-classes-wellness .classes-thumbnail-wellness {
+	margin-top: 30px;
+}
+
+.timetable h2,
+.timetable .h-2 {
+	margin-bottom: 0;
+}
+
+/*		ADS - WELLNESS
+============================================================== */
+.ads-wellness {
+	background-image: url('../../images/images_wellness/add.jpg');
+}
+.ads-wellness .h-2 {
+	color: #ffffff;
+	margin-bottom: 5px;
+}
+.ads-wellness p {
+	color: #ffffff;
+	padding-right: 51%;
+	margin: 8px 0 20px;
+}
+.ads-wellness .btn-custom {
+	border: 1px solid #FFF;
+	max-width: 198px;
+	color: #FFF;
+}
+.prices h2,
+.prices .h-2 {
+	margin-bottom: 0;
+}
+.price-plan-wellness .package-panel {
+	margin-top: 41px;
+}
+
+/*		CLASSES DESCRIPTION - WELLNESS
+==============================================================
+============================================================== */
+.classes-description-wellness h2,
+.classes-description-wellness .h-2 {
+	margin-bottom: 8px;
+}
+.video-classes-wellness + p {
+	margin: 12px 0 6px;
+}
+.classes-description-wellness .classes-list {
+	margin-top: 6px;
+}
+.classes-description-wellness .classes-list li {
+	margin: 0 0 4px;
+}
+.aside-content-wrapper {
+	margin: 18px 0 0;
+}
+.rafting-breadcrumbs {
+	background-image: url('../../images/images_wellness/classes_wellness_breadcrumbs.jpg');
+}
+.rafting aside {
+	padding-top: 85px;
+}
+.rafting .aside-content-wrapper {
+	margin-top: 24px;
+}
+.rafting .aside-navigation {
+	margin: 15px 0px 40px;
+}
+.rafting .aside-navigation li a,
+.rafting .aside-navigation li {
+	font-family: 'josefin_sansregular';
+}
+
+aside .btn-custom, 
+aside .btn-custom-black {
+	max-width: 100%;
+}
+.video-classes-wellness {
+	background-image: url('../../images/images_wellness/rafting_description.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	margin-top: 40px;
+}
+
+/*		EVENTS - WELLNESS
+==============================================================
+============================================================== */
+.events-cover-image-wellness {
+	margin: 30px 0 5px;
+}
+
+.events-sidebar-wellness {
+	padding-top: 28px;
+}
+.events-sidebar-wellness .aside-navigation {
+	margin: 22px 0 52px;
+}
+.events-sidebar-wellness .aside-navigation li {
+	padding-top: 28px;
+	padding-bottom: 28px;
+}
+.events-sidebar-wellness .aside-navigation li:first-child {
+	padding-top: 0;
+}
+.events-sidebar-wellness .btn-custom {
+	border: 1px solid rgba(0,0,0,0.3)
+}
+
+
+.popular-events-wellness .events-detail {
+	padding-left: 20px;
+}
+.popular-events-wellness .events-thumbnail {
+	padding-bottom: 118px;
+}
+
+
+
+/*		TRAINER PROFILE - WELLNESS
+==============================================================
+============================================================== */
+.trainer-profile-breadcrumbs-wellness {
+	background-image: url('../../images/images_wellness/trainer_profile_breadcrumbs.jpg');
+}
+.other-instructors-wellness .trainers-thumbnail {
+	margin-top: 45px;
+}
+
+
+
+/*		BLOG - WELLNESS
+==============================================================
+============================================================== */
+.blog-breadcrumbs-wellness {
+	background-image: url('../../images/images_wellness/blog_wellness_breadcrumbs.jpg');
+}
+#all-posts-wellness li {
+	margin-top: 0;
+}
+.all-posts-wellness .post-author, 
+.all-posts-wellness .post-date,
+.all-posts-wellness .post-category {
+	font-size: 14px;
+	color: #fff;
+}
+
+
+/*		BLOG NAV - WELLNESS
+============================================================== */
+.blog-nav {
+	display: block;
+	text-align: center;
+	margin: 32px 0 32px;
+}
+.blog-nav li {
+	margin: 0 23px;
+    display: inline-block;
+    float: none;
+}
+.blog-nav li.uk-active a {
+	color: #ed344a;
+}
+.blog-nav li a {
+	font-family: 'josefin_sansbold';
+	font-size: 16px;
+	line-height: 15px;
+	color: #000;
+	text-transform: capitalize;
+}
+.blog-content-wellness {
+	color: #FFF;
+	margin-bottom: 60px;
+}
+
+
+
+/*		SINGLE POST - WELLNESS
+==============================================================
+============================================================== */
+
+
+.single-post-breadcrumbs-wellness {
+	background-image: url('../../images/images_wellness/blog_single_breadcrumbs.jpg');
+}
+
+#display-blog-posts {
+	min-height: 736px;
+}
+#display-blog-posts .blog-info-list {
+	margin: 8px 0 4px;
+}
+
+/*		SHOP - WELLNESS
+==============================================================
+============================================================== */
+
+
+.shop-breadcrumbs-wellness {
+	background-image: url('../../images/images_wellness/shop_breadcrumbs.jpg');
+}
+
+
+
+/*		CONTACT - WELLNESS
+==============================================================
+============================================================== */
+.contact-breadcrumbs-wellness {
+	background-image: url('../../images/images_wellness/contact_breadcrumbs.jpg');
+}
+.contact-wellness {
+	padding-top: 162px;
+	padding-bottom: 130px;
+}
+.gmap-wrapper {
+	margin: 50px 0 0;
+}
+.contact-wellness .h-5 {
+	margin-bottom: 6px;
+}
+.contact-scopes-wellness {
+	margin-top: 36px;
+}
+.contact-scopes-wellness .contact-info {
+	padding-bottom: 14px;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	margin: 14px 0 30px;
+}
+.contact-scopes-wellness .write-comment-form {
+	padding: 0;
+}
+.contact-scopes-wellness .form-custom {
+	margin-top: 33px;
+}
+.contact-scopes-wellness .form-custom .row-one {
+	margin-bottom: 24px;
+}
+/*		SUBSCRIPTION 
+============================================================== */
+.subscription-wellness {
+	padding-top: 80px;
+	padding-bottom: 60px;
+	
+}
+.subscription-header-wellness {
+	padding-top: 10px;
+	padding-left: 13%;
+}
+.subscription-wellness .input-custom {
+	margin-top: 10px;
+}
+
+
+
+/*		SPORT
+===========================================================================================
+=========================================================================================== */
+
+
+
+/*		HOME - SPORT 
+==============================================================
+============================================================== */
+
+/*		HOME - SLIDESHOW 
+============================================================== */
+.home-slideshow-sport h1 {
+	font-family: 'josefin_sansbold';
+	font-size: 110px;
+	line-height: 110px;
+	color: rgba(255, 255, 255, .4);
+	padding-left: 45px;
+	margin-bottom: 0px;
+	z-index: 9;
+}
+.home-slideshow-sport h3 {
+	font-family: 'josefin_sansbold';
+	font-size: 36px;
+	line-height: 27px;
+	color: #ffffff;
+	z-index: 99;
+	margin: 0;
+}
+.home-slideshow-sport .btn-custom {
+	border-color: #fff;
+	color: #fff;
+	margin-bottom: -90px!important;
+}
+.home-slideshow-sport .slider-one {
+	margin-bottom: -20px!important;
+}
+
+/*		DOT NAV - SLIDESHOW  
+============================================================== */
+.home-slideshow-sport .uk-dotnav {
+	margin-left: 4%;
+}
+.home-slideshow-sport .uk-dotnav > * > * {
+	width: 21px;
+	height: 20px;
+	background-color: rgba(255,255,255,.7);
+	border-radius: 4px;
+	border: 1px solid #000;
+}
+.home-slideshow-sport .uk-dotnav-contrast> .uk-active > * {
+	background-color: rgba(237,52,34,.6);
+	border: 0px;
+}
+
+
+
+
+/*		HOME - ABOUT / FEATURES
+============================================================== */
+.home-features {
+	margin-top: 55px;
+}
+.home-features .h-4 {
+	line-height: 1;
+	margin-bottom: 8px;
+	margin-top: 0;
+}
+.home-features figure img {
+	margin-bottom: 15px;
+}
+
+/*		HOME - CLASSES - SPORT
+============================================================== */
+
+.home-classes-sport .classes-thumbnail-sport {
+	margin-bottom: 26px;
+}
+
+
+
+/*		HOME - TRAINERS  
+============================================================== */
+.home-trainers-sport {
+	background-image: url('../../images/images_sport/home_trainers.jpg');
+	
+}
+.home-trainers-sport .h-2 {
+	color: #FFF;
+	white-space: nowrap;
+}
+.home-trainers-sport .uk-dotnav > * {
+	padding-left: 23px;
+}
+.home-trainers-sport .uk-dotnav > * > * {
+	width: 13px;
+	height: 13px;
+	border-radius: 4px;
+	background-color: #ccc;
+	cursor: pointer;
+}
+.home-trainers-sport .uk-dotnav-contrast > .uk-active > * {
+	background-color: #ff3333;
+}
+.home-trainer-name {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	color: #FFF;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	line-height: 1;
+	border-radius: 4px;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .7);
+	text-transform: capitalize;
+	top: -110px;
+	position: absolute;
+}
+.home-trainers-sport .btn-custom {
+	border-color: #666666;
+	color: #FFF;
+	padding: 0;
+}
+.home-trainers-sport .events-detail h5 {
+	color: #fff;
+}
+.home-trainers-sport p {
+	color: #ebebeb;
+	margin: 6px 0 0;
+}
+.home-trainers-sport .aside-navigation {
+	margin: 20px 0 26px;
+}
+.home-trainers-sport .aside-navigation li {
+	padding: 35px 0 30px;
+	border-color: #666666;
+}
+.home-trainers-sport .aside-navigation li:first-child {
+	padding-top: 0;
+}
+
+
+/*		HOME - VIDEO   
+============================================================== */
+.home-video-sport {
+	padding-top: 130px;
+}
+.home-video-sport h2,
+.home-video-sport .h-2 {
+	margin-bottom: 6px;
+}
+.video-cover-sport {
+	background-image: url('../../images/images_sport/video.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.course-fees {
+	font-size: 18px;
+	line-height: 1;
+	margin: 30px 0 28px;
+}
+.video-list-sport {
+	padding-left: 20px;
+	margin: 12px 0 15px;
+}
+.video-list-sport li {
+	margin: 0 0 5px;
+}
+.text-red {
+	color: #ff3333;
+}
+.home-video-sport .btn-custom-black {
+	height: 50px;
+	font-size: 18px;
+}
+
+
+/*		ACHIVEMENTS   
+============================================================== */
+.achivements-bg-sport {
+	background-image: url('../../images/images_sport/home_achivements_bg.jpg');
+}
+
+/*		PRICE PLAN SPORT  
+============================================================== */
+.prices-sport.section-padding-bottom {
+	padding-bottom: 126px;
+} 
+.prices-sport h2 + p,
+.prices-sport .h-2 + p {
+	margin-top: 10px;
+}
+.prices-sport .panel-custom.minimal {
+	background-image: url('../../images/images_sport/minimal_plan.png');
+}
+.prices-sport .panel-custom.base {
+	background-image: url('../../images/images_sport/base_plan.png');
+}
+.prices-sport .panel-custom.advanced {
+	background-image: url('../../images/images_sport/advanced_plan.png');
+}
+
+/*		ADS-sport   
+============================================================== */
+.ads-sport {
+	background-image: url('../../images/images_sport/add.jpg');
+}
+.ads-sport .h-2 {
+	color: rgba(255, 255, 255, 1);
+	z-index: 99;
+	position: relative;
+	margin: 0;
+}
+.ads-sport .ads-maintitle-sport {
+	font-size: 60px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .3);
+    position: absolute;
+    z-index: 9;
+    padding-left: 57px;
+    top: -45px;
+    margin: 0;
+    line-height: 1;
+}
+.ads-text-wrapper-sport {
+	margin-top: 79px;
+}
+.ads-sport p {
+	color: #ffffff;
+	padding-right: 51%;
+	margin: 8px 0 18px;
+}
+
+
+
+/*		HOME - SHOP   
+============================================================== */
+
+.home-shop-sport {
+	background-color: #ffffff;
+	margin-bottom: 30px;
+}
+.home-shop-sport h2 {
+	margin-top: 3px;
+}
+.home-shop-sport .products-thumbnail {
+	margin-top: 40px;
+}
+
+
+
+/*		ABOUT - SPORT
+==============================================================
+============================================================== */
+
+.about-breadcrumbs-sport {
+	background-image: url('../../images/images_sport/about_breadcrumbs.jpg');
+}
+
+
+
+
+
+
+/* 			WE ARE SPORT - SPORT
+================================================================== */
+
+
+
+.we-are-sport h2,
+.we-are-sport .h-2 {
+	margin-bottom: 0;
+}
+.we-are-sport h2 + p,
+.we-are-sport .h-2 + p {
+	margin: 6px auto 15px;
+}
+
+/* 			OUR TEAM - SPORT
+================================================================== */
+
+.our-team-sport h2,
+.our-team-sport .h-2 {
+	margin-bottom: 0;
+}
+.our-team-sport h2 + p,
+.our-team-sport .h-2 + p {
+	margin: 6px auto 15px;
+}
+.our-team-sport .trainers-thumbnail {
+	margin-top: 56px;
+}
+.our-team-sport .uk-grid-margin {
+	margin-top: 60px;
+}
+
+
+/* 			CALL 2 ACTION | FREE TRIAL WORKOUT - SPORT
+================================================================== */
+.call-action-bg {
+	background-image: url('../../images/images_sport/call2action.png');
+}
+.call-action-text-wrapper {
+	
+	max-width: 545px;
+}
+.call-action .btn-custom {
+	width: 200px;
+}
+.call-us-sport {
+	margin: 15px 0 5px;
+}
+.call-us-sport + p {
+	margin: 5px 0 15px;
+}
+.call-action button,
+.call-action [class^= "btn-custom"] {
+	margin: 26px 0 0;
+}
+
+/* 			TESTIMONIALS 
+================================================================== */
+.testimonials-sport {
+	color: #ffffff;
+}
+.testimonials-sport .uk-slideshow > li:nth-of-type(1) > div {
+	background-image: url('../../images/images_sport/testimonials_bg.jpg');
+	background-repeat: no-repeat;
+}
+.testimonials-sport .uk-slideshow > li:nth-of-type(2) > div {
+	background-image: url('../../images/images_sport/testimonials_bg.jpg');
+	background-repeat: no-repeat;
+}
+.testimonials-slider-area-sport {
+	max-width: 890px;
+}
+.testimonials-sport .h-2 {
+	 color: #ffffff;
+}
+.testimonials-sport .clients-quote {
+	margin: 16px 0 12px;
+}
+.testimonials-sport .client-name {
+	margin: 13px 0 9px;
+}
+.testimonials-sport .client-title {
+	margin: 0;
+}
+.testimonials-sport .uk-dotnav {    
+	margin-bottom: 15px;
+} 
+.testimonials-sport .uk-dotnav-contrast> .uk-active > * {
+	background-color: rgba(237,52,34,.6);
+    border: 0px;
+}
+.testimonials-sport .uk-dotnav > * > * {
+    width: 14px;
+    height: 14px;
+    background-color: rgba(255,255,255,.7);
+    border-radius: 4px;
+    border: 1px solid #000;
+}
+
+
+
+/*		CLASSES - SPORT
+==============================================================
+============================================================== */
+.classes-breadcrumbs-sport {
+	background-image: url('../../images/images_sport/classes_breadcrumbs.jpg');
+}
+
+
+/*		CLASSES DESCRIPTION - SPORT
+==============================================================
+============================================================== */
+.boxing-breadcrumbs {
+	background-image: url('../../images/images_sport/boxing_breadcrumbs.jpg');
+}
+.boxing aside {
+	padding-top: 72px;
+}
+.boxing .aside-content-wrapper {
+	margin-top: 24px;
+}
+.boxing .aside-navigation {
+	margin: 15px 0px 40px;
+}
+.boxing .aside-navigation li {
+	padding: 8px 0 10px;
+}
+.video-classes-sport {
+	background-image: url('../../images/images_sport/boxing_video.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	margin-top: 50px;
+}
+
+
+/* 			POPULAR CLASSES
+================================================================== */
+
+.popular-classes-sport  h2,
+.popular-classes-sport  .h-2 {
+	margin-bottom: 0;
+}
+
+.popular-classes-sport  h2 + p,
+.popular-classes-sport  .h-2 + p {
+	margin: 8px auto 15px;
+}
+
+
+
+
+
+
+/*		EVENTS - SPORT
+==============================================================
+============================================================== */
+.events-breadcrumbs-sport {
+	background-image: url('../../images/images_sport/events_breadcrumbs.jpg');
+}
+
+
+/* 			POPULAR EVENTS
+================================================================== */
+.popular-events-sport .btn-custom,
+.events-sidebar-sport .btn-custom {
+	height: auto;
+	border-color: rgba(0,0,0,0.3);
+}
+
+
+
+/* 			EVENTS SIDEBAR
+================================================================== */
+.events-sidebar-sport .h-5 {
+	margin-bottom: 15px;
+}
+.events-sidebar-sport .events-detail p {
+	margin-top: 12px;
+}
+
+.events-sidebar-sport {
+	padding-top: 68px;
+}
+.events-sidebar-sport .aside-navigation {
+	margin: 22px 0 52px;
+}
+.events-sidebar-sport .aside-navigation li {
+	padding: 26px 0 28px;
+}
+.events-sidebar-sport .aside-navigation li:first-child {
+	padding-top: 0;
+}
+
+
+/* 			EVENT MAIN BODY
+================================================================== */
+.events-description-body-sport > img{
+	margin-top: 34px;
+}
+.events-description-body-sport > p {
+	margin-top: 22px;
+	margin-bottom: 28px;
+}
+.popular-events-sport h2,
+.popular-events-sport .h-2 {
+	margin-bottom: 0;
+}
+.popular-events-sport h2 + p,
+.popular-events-sport .h-2 + p {
+	margin: 10px auto 15px;
+}
+.popular-events-sport .events-thumbnail {
+	margin-top: 56px;
+	padding: 0 0 120px;
+}
+.popular-events-sport .events-detail {
+	padding-left: 0;
+}
+.events-description-body-sport .events-description-slideset {
+	margin: 30px auto 14px;
+}
+
+
+
+
+/*		TRAINER PROFILE - SPORT
+==============================================================
+============================================================== */
+.trainer-profile-breadcrumbs-sport {
+	background-image: url('../../images/images_sport/trainer_profile_breadcrumbs.jpg');
+}
+
+.trainer-profile-sport .trainer-profile-image {
+	margin-bottom: 0;
+}
+.other-trainers-sport .trainers-thumbnail {
+	margin-top: 50px;
+}
+
+
+
+
+/*		BLOG - SPORT
+==============================================================
+============================================================== */
+
+.blog-breadcrumbs-sport {
+	background-image: url('../../images/images_sport/blog_breadcrumbs.jpg');
+}
+.blog-single-sport aside {
+	padding-top: 57px;
+}
+.all-posts-sport aside > h4, 
+.all-posts-sport aside > .h-4 {
+	margin-top: -8px;
+}
+.all-posts-sport aside h4, 
+.all-posts-sport aside .h-4 {
+	margin-bottom: 2px;
+}
+.all-posts-sport .blog-content-sport figcaption {
+	margin-top: 22px;
+}
+.blog-content-sport figcaption p {
+	margin: 10px 0 15px;
+}
+.blog-single-sport .comments {
+    padding: 52px 0 30px;
+}
+/* 			BLOG SIDEBAR | ASIDE
+================================================================== */
+.all-posts-sport .aside-navigation {
+	margin: 10px 0 52px;
+}
+.all-posts-sport .aside-navigation li {
+	padding: 8px 0;
+    margin: 0;
+    
+}
+
+/* 			TAGS CLOUD
+================================================================== */
+.tags {
+	margin-top: 36px;
+}
+
+.tag-cloud {
+    padding-left: 0;
+    margin-top: 30px;
+}
+.tag-cloud li {
+    list-style: none;
+    display: inline-block;
+    height: 30px;
+    margin: 0 0 10px;
+}
+.tag-cloud li a {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #000;
+    margin-right: 5px;
+    border-radius: 4px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: #000;
+    display: inline-block;
+}
+
+
+/* 			BLOG | MAIN BODY
+================================================================== */
+.blog-content-sport {
+	padding: 60px 0 60px;
+	border-bottom: 1px solid rgba(0,0,0,0.3); 
+	margin: 0;
+}
+.blog-content-sport:first-child {
+	padding: 0 0 60px;
+}
+.blog-content-sport .blog-info-list {
+	margin-top: 26px;
+}
+.blog-content-sport .blog-info-list > li {
+	border-right: 1px solid #666666;
+}
+.blog-content-sport .h-4 {
+	margin: 0 0 11px;
+}
+
+.blog-content-sport .btn-sport {
+	margin-top: 18px;
+}
+
+
+/*		SINGLE POST - SPORT
+==============================================================
+============================================================== */
+.single-post-breadcrumbs-sport {
+	background-image: url('../../images/images_sport/blog_single_breadcrumbs.jpg');
+}
+.blog-single-sport > h4,
+.blog-single-sport > .h-4 {
+	margin-top: -8px;
+}
+.blog-single-sport .single-post-body {
+	margin-top: 24px;
+}
+
+/*		SHOP - SPORT
+==============================================================
+============================================================== */
+.shop-breadcrumbs-sport {
+	background-image: url('../../images/images_sport/shop_breadcrumbs.jpg');
+}
+
+.shop-sport .aside-navigation {
+	margin: 6px 0px 52px 0px;
+}
+.shop-sport aside .h-4 {
+    margin: 20px 0px 3px;
+}
+
+/*		CONTACT-sport - SPORT
+==============================================================
+============================================================== */
+.contact-breadcrumbs-sport {
+	background-image: url('../../images/images_sport/contact_breadcrumbs.jpg');
+}
+.contact-sport {
+	padding-top: 160px;
+}
+.contact-sport .h-5 {
+	margin-bottom: 6px;
+}
+.contact-scopes-sport {
+	margin-top: 50px;
+}
+.contact-scopes-sport .contact-info {
+	padding-bottom: 14px;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	margin: 0 0 25px;
+}
+.contact-scopes-sport .write-comment-form {
+	padding: 0;
+}
+.contact-scopes-sport .form-custom {
+	margin: 33px 0 0;
+}
+.contact-scopes-sport .form-custom .row-one {
+	margin-bottom: 24px;
+}
+
+
+
+/*		YOGA
+===========================================================================================
+=========================================================================================== */
+
+/*		HOME - YOGA
+==============================================================
+============================================================== */
+
+div[class$="breadcrumbs-yoga"] .h-1 {
+	margin-top: 0;
+	color: #000!important;
+	margin: 17px 0 0!important;
+}
+div[class$="breadcrumbs-yoga"] .uk-breadcrumb {
+	margin-bottom: 20px!important;
+	color: #000;
+}
+div[class$="breadcrumbs-yoga"] .uk-breadcrumb li,
+div[class$="breadcrumbs-yoga"] .uk-breadcrumb li a {
+	color: #000!important;
+}
+
+
+.h-4-yoga {
+	font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+.title-wrapper-yoga {
+	margin: 0 10px 0 0;
+	vertical-align: middle;
+}
+.h-4-yoga + p {
+	margin: 6px 0 15px;
+}
+
+/*		HOME - SLIDESHOW 
+============================================================== */
+.home-slider-yoga h1 {
+	font-family: 'josefin_sansregular';
+	color: #000;
+	position: relative;
+	font-size: 60px;
+	margin: 0 0 40px;
+}
+.home-slider-yoga h3 {
+	font-family: 'josefin_sansbold';
+	color: #000;
+	font-size: 24px;
+	margin-top: 0;
+}
+
+
+
+/*		DOT NAV - SLIDESHOW  
+============================================================== */
+.home-slider-yoga .uk-dotnav {
+	margin-bottom: 95px;
+}
+.home-slider-yoga .uk-dotnav>*>* {
+	background-color: #fff;
+	width: 15px;
+	height: 15px;
+	opacity: .7;
+	border-radius: 4px;
+}
+.home-slider-yoga .uk-dotnav-contrast> .uk-active > * {
+	background-color: #000;
+}
+
+
+/*		WE ARE  
+============================================================== */
+.we-are-yoga h2 {
+	margin: 0;
+	color: #000;
+}
+.we-are-yoga .uk-overlay-panel {
+	padding: 42px;
+}
+
+/*		HOME - ABOUT 
+============================================================== */
+.yoga-studio {
+	padding: 50px 0;
+}
+.yoga-studio h4
+.yoga-studio .h-4-yoga, {
+	margin-bottom: 4px;
+}
+.yoga-studio p {
+	margin: 6px 0 8px;
+}
+
+.title-absolute,
+.title-absolute-about,
+.title-absolute-classes {
+	position: absolute;
+	width: 92px;
+	top: 0;
+	left: 50%;
+	margin-left: -46px;
+	margin-top: -100px;
+	text-align: center;
+}
+.title-absolute {
+	margin-top: 10px;
+}
+.title-absolute-about {
+	margin-top: 0;
+}
+.title-absolute p,
+.title-absolute-about p,
+.title-absolute-classes p {
+	font-family: 'josefin_sanslight';
+    font-size: 50px;
+    margin-bottom: 0;
+    line-height: 60px;
+    text-align: center;
+    color: #000;
+}
+.title-absolute .h-3,
+.title-absolute-about .h-3,
+.title-absolute-classes .h-3 {
+	font-size: 22px;
+    line-height: 22px;
+    margin: 0;
+}
+
+
+/*		HOME - CLASSES 
+============================================================== */
+
+.home-classes-yoga {
+	background-color: #f3f0f8;
+}
+.home-classes-yoga h4,
+.home-classes-yoga .h-4-yoga {
+	margin-bottom: 13px;
+}
+.home-classes-yoga h4 + p, 
+.home-classes-yoga .h-4-yoga + p {
+	padding-right: 42px;
+    word-break: break-all;
+}
+
+/*		HOME - EVENTS  - YOGA
+============================================================== */
+
+.home-events-yoga .classes-thumbnail-yoga {
+	padding: 0 0 40px;
+	margin: 0 0 30px;
+}
+.home-events-yoga .classes-thumbnail-yoga .uk-grid-margin {
+	margin-top: 40px;
+}
+.home-events-yoga .more-tag {
+	line-height: 14px;
+}
+
+/*		BLOG - YOGA
+==============================================================
+============================================================== */
+.blog-breadcrumbs-yoga {
+	background-image: url('../../images/images_yoga/blog_breadcrumbs.jpg');
+}
+.all-posts-yoga {
+	padding-top: 130px;
+}
+.all-posts-yoga .uk-grid+.uk-grid {
+	margin-top: 0;
+}
+.all-posts-yoga .aside-navigation {
+	margin: 7px 0 40px;
+}
+.all-posts-yoga .blog-pagination {
+	margin: 50px 0 0;
+}
+.blog-posts-item-yoga .blog-posts-overview {
+	padding-left: 13px;
+}
+.blog-posts-item-yoga {
+	padding: 60px 0 60px;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.blog-posts-item-yoga h4 {
+	margin: 0 0 5px;
+}
+.blog-posts-item-yoga .blog-info-list li {
+	border-color: #666666;
+}
+.blog-posts-item-yoga:first-child {
+	padding-top: 0;
+}
+.blog-posts-item-yoga > img {
+	margin-right: 30px;
+}
+.blog-posts-item-yoga p {
+	margin: 6px 0 13px;
+}
+
+.all-posts-yoga .aside-navigation li a {
+	font-family: 'josefin_sansbold';
+}
+
+.all-posts-yoga .aside-navigation .active a {
+	color: #ed344a;
+}
+
+/*		HOME - BLOG | FROM BLOG 
+============================================================== */
+
+.home-blog-yoga .blog-posts-item-yoga {
+	padding: 0;
+	margin: 0;
+}
+.blog-slide-nav {
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(0,0,0,.3);
+	margin-bottom: 60px;
+}
+.blog-slide-nav a {
+	font-family: 'josefin_sansbold';
+	font-size: 14px;
+	line-height: 1;
+	color: #000;
+	text-transform: uppercase;
+}
+.blog-slide-nav a span {
+	vertical-align: middle;
+}
+.blog-slide-nav a i {
+	font-size: 30px;
+	vertical-align: middle;
+}
+.blog-slide-nav .uk-icon-angle-left {
+	margin-right: 20px;
+}
+.blog-slide-nav .uk-icon-angle-right {
+	margin-left: 20px;
+}
+
+
+/*		HOME - VIDEO  
+============================================================== */
+.home-video-yoga .btn-custom {
+	max-width: 100px;
+	
+}
+.video-cover-yoga {
+	background-image: url('../../images/images_wellness/video.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+
+
+/*		HOME - CONTACT 
+============================================================== */
+
+
+.home-contact-yoga {
+	background-color: #f3f3fe;
+}
+.home-contact-yoga h4,
+.home-contact-yoga .h-4-yoga {
+	margin-bottom: 3px;
+}
+.home-contact-yoga h4 + p,
+.home-contact-yoga .h-4-yoga + p {
+	margin: 5px 0 10px;
+}
+.home-contact-yoga .btn-custom {
+	max-width: 100px;
+}
+.home-contact-yoga .contact-info {
+	border-bottom: 1px solid rgba(0, 0, 0, .3);
+	margin: 0 0 28px;
+	padding: 0 0 22px;
+}
+.home-contact-yoga .contact-info li {
+	margin: 0;
+}
+.home-contact-yoga .contact-info li img {
+	vertical-align: baseline;
+}
+.home-contact-yoga .write-comment-form {
+	padding: 0;
+}
+.home-contact-yoga ul {
+	list-style: none;
+}
+.home-contact-yoga .form-custom {
+	margin-top: 37px;
+}
+.home-contact-yoga .form-custom .uk-grid-margin {
+	margin-top: 38px;
+}
+
+/*		ABOUT - YOGA
+==============================================================
+============================================================== */
+
+.about-breadcrumbs-yoga {
+	background-image: url('../../images/images_yoga/about_breadcrumbs.jpg');
+}
+
+.our-club-yoga.section-padding-bottom {
+	padding-bottom: 90px;
+}
+
+/*		POPULAR - CLASSES
+============================================================== */
+.popular-classes-yoga {
+	padding-bottom: 99px;
+}
+.popular-classes-yoga .h-4 + p {
+	font-size: 16px;
+	color: #000;
+	line-height: 1;
+}
+
+
+
+/*		ACHIVEMENTS
+============================================================== */
+.achivements-bg-yoga {
+	background-image: url('../../images/images_yoga/achivements_bg.jpg');
+}
+.achivements-bg-yoga .achivements-counts,
+.achivements-bg-yoga .achivements-titles {
+	color: #000;
+}
+
+/*		PHILOSOPHY
+============================================================== */
+.philosophy-yoga {
+	padding: 132px 0 128px;
+}
+/*		YOGA TEACHERS
+============================================================== */
+.yoga-teachers .trainers-thumbnail {
+	margin-top: 50px;
+}
+
+/*		TESTIMONIALS-yoga
+============================================================== */
+.testimonials-yoga .uk-slideshow li:nth-child(1) > div {
+	background-image:url('../../images/images_yoga/testimonials_bg_01.jpg');
+}
+.testimonials-yoga .uk-slideshow li:nth-child(2) > div {
+	background-image:url('../../images/images_yoga/testimonials_bg_01.jpg');
+}
+.testimonials-yoga .clients-quote  {
+	margin: 36px 0 22px;
+}
+.testimonials-yoga .clients-quote,    
+.testimonials-yoga .client-name,
+.testimonials-yoga .client-title {
+	color: #000;
+}
+.testimonials-yoga .client-image > img {
+	border-radius: 4px;
+}
+.testimonials-yoga .testimonial-client {
+	padding-left: 10px;
+}
+.testimonials-yoga .uk-dotnav {
+	margin-bottom: 50px;
+}
+.testimonials-yoga .uk-dotnav>*>* {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    opacity: .7;
+    border-radius: 4px;
+}
+.testimonials-yoga .uk-dotnav-contrast> .uk-active > * {
+    background-color: #000;
+}
+
+
+
+/*		CLASSES - YOGA
+==============================================================
+============================================================== */
+.classes-breadcrumbs-yoga {
+	background-image: url('../../images/images_yoga/classes_breadcrumbs.jpg');
+}
+.individual-class-yoga {
+	max-width: 225px;
+	margin-bottom: 15px;
+}
+.individual-class-yoga .h-5 {
+	margin-bottom: 0;
+}
+/*		POPULAR CLASSES
+============================================================== */
+.popular-classes-yoga h2,
+.popular-classes-yoga .h-2 {
+	margin-bottom: 0;
+}
+
+.popular-classes-yoga h2 + p,
+.popular-classes-yoga .h-2 + p {
+	margin: 5px auto 15px;
+}
+
+.classes-thumbnail-yoga .overflow-hidden {
+	margin-bottom: 10px;
+}
+.classes-thumbnail-yoga h4,
+.classes-thumbnail-yoga .caption-title-18 {
+	margin: 0;
+}
+.classes-thumbnail-yoga h4 + p,
+.classes-thumbnail-yoga .caption-text-16,
+.classes-thumbnail-yoga p {
+	margin: 4px 0px 0px;
+}
+/*		ABOUT YOGA 
+============================================================== */
+.about-yoga  h2,
+.about-yoga  .h-2 {
+	margin-bottom: 0;
+}
+
+.about-yoga  h2 + p,
+.about-yoga  .h-2 + p {
+	margin: 10px auto 15px;
+}
+
+.classes-overview-home-yoga {
+	margin: 60px 0 0;
+}
+.individual-class-yoga h5 + p,
+.individual-class-yoga .h-5 + p {
+	margin: 9px 0 15px;
+}
+/*		ADS
+============================================================== */
+.ads-yoga {
+	background-image: url('../../images/images_yoga/add.jpg');
+	
+}
+.ads-yoga .uk-container {
+	padding-top: 50px;
+}
+
+.ads-yoga h2 {
+	margin-bottom: 20px;
+}
+.ads-yoga p {
+	margin-bottom: 20px;
+	padding-right: 43%;
+}
+
+
+
+/*		CLASSES DESCRIPTION - YOGA
+==============================================================
+============================================================== */
+.classes-description-breadcrumbs-yoga {
+	background-image: url('../../images/images_yoga/classes_breadcrumbs.jpg');
+}
+.video-classes-yoga {
+	background-image: url('../../images/images_yoga/yoga_description.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+.yoga aside > h4,
+.yoga aside > .h-4 {
+	margin-top: -8px;
+}
+.yoga .aside-content-wrapper {
+    margin: 20px 0 0;
+}
+.yoga .aside-navigation li, 
+.yoga .aside-navigation li a {
+	padding: 8px 0px 10px;
+}
+.classes-description-yoga p {
+	margin: 18px 0 8px;
+}
+.classes-description-yoga .classes-list {
+	margin: 8px 0 0;
+}
+
+
+
+/*		EVENTS - YOGA
+==============================================================
+============================================================== */
+.events-breadcrumbs-yoga {
+	background-image: url('../../images/images_yoga/events_breadcrumbs.jpg');
+}
+
+.events-description-body-yoga {
+	margin-top: 20px;
+}
+.events-description-body-yoga p,
+.events-description-body-yoga .text-sixteen {
+	margin: 23px 0 15px;
+}
+.events-description-body-yoga .events-description-slideset {
+	margin: 30px auto 18px;
+}
+
+
+
+
+/*		EVENTS SIDEBAR | ASIDE
+============================================================== */
+
+.events-sidebar-yoga {
+	padding-top: 12px;
+}
+.events-sidebar-yoga .btn-custom {
+	max-width: 80px;
+	border-color: rgba(0,0,0,.3);
+	height: 30px;
+}
+.events-sidebar-yoga .aside-navigation {
+	margin: 27px 0 60px;
+}
+.events-sidebar-yoga .aside-navigation li {
+	padding: 38px 0;
+}
+.events-sidebar-yoga .aside-navigation li:first-child {
+	padding-top: 0;
+}
+.events-sidebar-yoga .events-detail {
+	padding-left: 5px;
+}
+.events-sidebar-yoga .events-detail p {
+	margin: 8px 0 0;
+}
+.events-sidebar-yoga .title-line-yoga {
+	width: 30px;
+}
+
+/*		TEACHER / TRAINER PROFILE - YOGA
+==============================================================
+============================================================== */
+.trainer-profile-breadcrumbs-yoga {
+	background-image: url('../../images/images_yoga/teacher_profile_breadcrumbs.jpg');
+}
+
+.trainer-profile-yoga .about-trainer-list {
+	margin: 10px 0 24px;
+}
+.trainer-profile-yoga .trainer-profile-image {
+	margin: 0 15px 0 0;
+}
+
+.other-yoga-teachers .trainers-thumbnail {
+	margin-top: 50px;
+}
+
+
+
+/*		SINGLE POST - YOGA
+==============================================================
+============================================================== */
+
+.blog-single-yoga .single-post-list {
+	margin-top: 8px;
+}
+.single-post-list-wrapper {
+	padding-left: 20px;
+}
+.dot-nav-custom {
+	margin-bottom: 16px;
+	z-index: 999;
+}
+.dot-nav-custom li a {
+	width: 7px;
+	height: 7px;
+	border-radius: 2px;
+}
+.dot-nav-custom li.uk-active a {
+	background-color: rgba(0, 0, 0, .7);
+}
+.dot-nav-custom .active {
+	color: #ed344a;
+}
+
+.blog-single-yoga .comments {
+	padding: 52px 0 30px;
+} 
+.blog-single-yoga .uk-form .btn-custom.btn-yoga {
+	max-width: 150px;
+}
+.blog-single-yoga .write-comment-form {
+	padding: 60px 0 0;
+}
+.blog-single-yoga aside > h4,
+.blog-single-yoga aside > .h-4 {
+	margin-top: -8px;
+}
+.blog-single-yoga .aside-navigation {
+	margin: 5px 0 40px;
+}
+.blog-single-yoga .events-calendar {
+	margin-top: 62px;
+}
+
+/*		RECENT POST YOGA
+============================================================== */
+.recent-posts-yoga .posts-thumbnail {
+	margin-top: 30px;
+}
+.recent-posts-yoga .posts-thumbnail .overflow-hidden {
+	margin-bottom: 16px;
+}
+.recent-posts-yoga .posts-thumbnail h5,
+.recent-posts-yoga .posts-thumbnail .h-5 {
+	margin: 0 0 6px;
+}
+.recent-posts-yoga .posts-thumbnail .text-sixteen, 
+.recent-posts-yoga .posts-thumbnail p {
+	margin: 6px 0 4px;
+}
+/*		SHOP - YOGA
+==============================================================
+============================================================== */
+.shop-breadcrumbs-yoga {
+	background-image: url('../../images/images_yoga/shop_breadcrumbs.jpg');
+}
+.subscription-yoga {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.subscription-yoga .uk-form .input-custom {
+	vertical-align: bottom;
+	font-size: 16px;
+}
+
+
+/*		CONTACT
+==============================================================
+============================================================== */
+.contact-breadcrumbs-yoga {
+	background-image: url('../../images/images_yoga/contact_breadcrumbs.jpg');
+}
+
+.contact-yoga .contact-info {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #aaaab1;
+}
+.contact-yoga .btn-custom {
+	max-width: 100px;
+}
+
+
+/*		COMMON PAGES - FOR ALL TEMPLATES
+==============================================================
+============================================================== */
+/*
+==============================================================
+	- PRODUCT
+	- ACCOUNT
+	- ACCOUNT STATUS
+	- PAYMENT CHECKOUT
+	- SHOPPING BAG
+	- ERROR
+	- OFFLINE
+	- COMMING SOON
+============================================================== */
+
+
+
+/*		PRODUCT
+==============================================================
+============================================================== */
+
+.product-page-breadcrumbs {
+	background-image: url('../../images/images_sport/product_page_breadcrumbs.jpg');
+}
+.product-slider-carousel {
+	margin-left: auto;
+	margin-right: auto;
+}
+.flexslider {
+	margin-bottom: 70px;
+}
+.flex-control-nav {
+	bottom: -50px;
+}
+.flex-control-paging li a {
+	width: 13px;
+	height: 13px;
+	background-color: #deddeb;
+	border-radius: 4px;
+}
+.flex-control-paging li a.flex-active {
+	background-color: #ed344a;
+}
+.product-features {
+	font-size: 16px;
+}
+.product-features .h-3 {
+	margin-bottom: 10px;
+}
+.product-features .shop-item-price {
+	font-size: 36px;
+	margin-top: 15px;
+	margin-bottom: 40px;
+}
+.product-filter {
+	margin-bottom: 40px;
+}
+.product-filter .uk-grid-small>.uk-grid-margin {
+	margin-top: 32px;
+}
+.product-filter .btn-custom-black {
+	max-width: 100%;
+}
+.product-features .uk-tab {
+	border-bottom: 1px solid #000;
+}
+.product-features .uk-tab > li {
+	width: 50%;
+}
+.product-features .uk-tab > li.uk-active > a {
+	border-width: 1px 1px 0;
+	border-style: solid;
+	border-color: #000000;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+.product-features .uk-tab li a {
+	color: #000;
+	border: 0;
+}
+.product-features .uk-tab li.uk-active a {
+	font-weight: bold;
+}
+.product-features-list {
+	list-style: inherit;
+	padding-left: 0;
+	margin: 8px 0 15px;
+}
+.product-features-list li {
+	line-height: 1;
+	margin-bottom: 8px;
+}
+.product-features-list li:before {
+	content: "-";
+	padding-right: 5px;
+}
+.product-description {
+	padding-bottom: 25px;
+	margin: 14px 0 12px;
+}
+.popular-products .h-2 {
+	margin-bottom: 60px;
+}
+.product-meta {
+	margin: 8px 0;
+}
+
+
+
+
+/*		ACCOUNT
+==============================================================
+============================================================== */
+.account-breadcrumbs {
+	background-image: url('../../images/images_sport/account.jpg');
+}
+.account .aside-navigation a {
+	font-family: 'josefin_sansbold';
+}
+
+.account .aside-navigation .active a {
+	color: #ed344a;
+}
+.account .aside-navigation {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.account-welcome {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+.account-info p {
+	font-size: 16px;
+	color: #000;
+}
+.account-info .uk-grid + .uk-grid {
+	margin-top: 22px;
+}
+.account-info-lg {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+
+
+/*		ACCOUNT STATUS
+==============================================================
+============================================================== */
+
+.account-status {
+	margin-top: 40px;
+}
+.account-status {
+	max-width: 100%;
+	overflow: auto;
+}
+.account-status >  .account-status-wrapper {
+	min-width: 570px;
+	padding-bottom: 25px;
+}
+
+
+
+
+/*		PAYMENT / PAYMENT CHECKOUT
+==============================================================
+============================================================== */
+.payment-breadcrumbs {
+	background-image: url('../../images/images_sport/payment.jpg');
+}
+
+/*		FORM STEPS
+============================================================== */
+.payment-steps-form > div {
+	overflow: hidden;
+}
+/*form styles*/
+#msform {
+	width: 100%;
+	margin: 50px auto;
+	position: relative;
+	min-height: 500px;
+}
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	margin: 0 10%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*buttons*/
+#msform .action-button {
+	width: 100px;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+/*headings*/
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+/*progressbar*/
+#progressbar {
+	padding-left: 0;
+	width: 100%;
+	margin-bottom: 30px;
+	overflow: visible;
+	text-align: center;
+	counter-reset: step;
+}
+#progressbar li {
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 25%;
+	float: left;
+	position: relative;
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 15px;
+	line-height: 15px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	border: 1px solid rgba(0,0,0,0.3);
+	background: white;
+	border-radius: 10px;
+	margin: 0 auto 5px auto;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	left: -50%;
+	top: 7px;
+	background: rgba(0,0,0,0.3);
+	z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	content: none; 
+}
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: #000;
+	color: white;
+}
+#progressbar li span {
+	font-family: 'josefin_sansbold';
+	font-size: 14px;
+	position: relative;
+    top: -52px;
+    color: #000;
+}
+#msform h4.h-4 {
+	width: 100%;
+	display: block;
+	margin-bottom: 0px;
+}
+.custom-grid-margin > * {
+	margin-bottom: 15px;
+}
+#msform .title-line-lg {
+	display: block;
+	margin-bottom: 20px
+}
+.order-entries {
+	padding-bottom: 25px;
+	padding-left: 15px;
+	margin-bottom: 30px;
+}
+.sum-total {
+	margin-top: 30px;
+}
+.payment-amount .uk-form-select {
+	border: 1px solid #B3B4B3;
+	border-radius: 4px; 
+	padding: 5px 10px;
+}
+
+
+/* 			 PAYMENT CONFIRMATION | THANK YOU
+================================================================== */
+.payment-confirmation {
+	margin-left: auto;
+	margin-right: auto;
+}
+.payment-confirmation .uk-overlay-panel {
+	padding-left: 87px;
+}
+.payment-confirmation .h-2 {
+	color: #000;
+}
+.payment-confirmation .title-line-lg {
+	margin-bottom: 27px;
+}
+.payment-confirmation p {
+	font-size: 18px;
+	line-height: 1;
+	color: #000;
+}
+
+
+
+
+
+
+/*		SHOPPING BAG
+==============================================================
+============================================================== */
+
+.shopping-bag-breadcrumbs {
+	background-image: url('../../images/images_sport/shopping_bag_breadcrumbs.jpg');
+}
+.shopping-bag {
+	padding-bottom: 60px;
+}
+.shopping-bag .wall {
+	line-height: 1;
+	padding: 10px 0px 11px;
+	text-transform: capitalize;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.shopping-bag-cart .uk-grid+.uk-grid {
+	margin-top: 0;
+}
+.shopping-bag-list {
+	padding-left: 0;
+	margin: 15px 0 10px;
+}
+.shopping-bag-list-item {
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	padding: 30px 0;
+}
+.shopping-bag-list-item:last-child {
+	border-bottom: 1px solid #000;
+}
+.shopping-bag .overflow-container {
+	margin-bottom: 20px;
+}
+.shopping-bag-cart {
+	min-width: 800px;
+}
+.shopping-bag-product-img img {
+	border-radius: 4px;
+	min-height: 97px;
+}
+.shopping-bag-product {
+	padding-left: 14px;
+	min-height: 97px;
+}
+.shopping-bag-product .h-5 {
+	line-height: 18px;
+	margin-bottom: 6px;
+	color: #000;
+}
+.shopping-bag-product .title-line-lg {
+
+}
+.shopping-bag-product .uk-overlay-panel {
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-right: 0;
+}
+.shopping-bag-product p {
+	color: #000;
+	margin: 0;
+}
+.update-bag-btn {
+	margin-left: 60%;
+}
+.calculate-delivery .wall {
+	padding: 10px 10px 13px 20px;
+	line-height: 1;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+}
+.calculate-delivery .wall ~ .wall {
+	margin-top: 60px;
+}
+.calculate-shopping .uk-grid-small > .uk-grid-margin {
+	margin-top: 22px;
+}
+.delivery-form .btn-custom {
+	width: 100px;
+	margin-top: 30px;
+}
+.calculate-shopping .btn-custom {
+	border-radius: 4px;
+}
+.discount-form {
+	margin-top: 42px;
+}
+.discount-form .input-custom {
+	margin-top: 10px;
+}
+.price-total {
+	margin-left: 10%;
+	padding: 67px 52px 62px 58px;
+}
+.price-total .h-4 {
+	line-height: .83;
+	margin-bottom: 10px;
+} 
+.price-total .cost-voucher {
+	padding-bottom: 30px;
+	margin-top: 30px;
+	border-bottom: 1px solid #000;
+}
+.price-total .btn-custom-black {
+	max-width: 100%;
+}
+.sum-total {
+	margin-bottom: 30px;
+}
+.sum-total span {
+	font-family: 'josefin_sansbold';
+	font-size: 18px;
+	color: #000;
+	line-height: 1;
+	text-transform: uppercase;
+}
+.cart-item-close {
+	background: transparent;
+    border: 0px solid;
+    cursor: pointer;
+}
+.spinner {
+	display: inline-block;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+    padding: 3px 8px;
+}
+.spinner input {
+	border: 0;
+    width: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.input-group-btn-vertical {
+	display: inline-block;
+	vertical-align: middle;
+}
+.spinner .btn {
+	display: block;
+    background: transparent;
+    border: 0;
+}
+.spinner i {
+	font-size: 18px;
+	cursor: pointer;
+}
+
+
+
+
+
+/*		ERROR
+==============================================================
+============================================================== */
+.error-404 {
+	background-image: url('../../images/images_sport/error_background.png');
+	background-color: #000;
+	background-position-x: 44vw;
+    background-position-y: 21vh;
+    background-size: contain;
+}
+.error-content-wrapper {
+	margin-left: 10%;
+}
+.error-404 h1 {
+	font-family: 'montserratbold', sans-serif;
+	font-size: 250px;
+	color: rgba(255, 255, 255, .08);	
+	font-weight: 900;
+	line-height: .7;
+	position: absolute;
+    top: 9.72vh;
+    left: 0;
+}
+.error-404 h2 {
+	font-family: 'montserratbold', sans-serif;
+	font-size: 150px;
+	color: rgba(255, 255, 255, .78);
+	 margin-bottom: 6.18vh;
+	font-weight: 900;
+	line-height: .75;
+}
+.error-404 h3 {
+	font-family: 'montserratbold', sans-serif;
+	font-size: 72px;
+	color: #fff;
+ 	margin-bottom: 3.86vh; 
+	font-weight: 900;
+	line-height: .75;
+}
+.error-404 p {
+	font-size: 30px;
+	color: #fff;
+	margin-bottom: 5.52vh; 
+	line-height: .83;
+	white-space: nowrap;
+}
+.error-404 .btn-custom {
+	color: #fff;
+	border-color: #fff;
+	min-width: 154px;
+}
+
+
+
+/*		OFFLINE
+==============================================================
+============================================================== */
+.offline {
+	background-image: url('../../images/images_sport/offline.jpg');
+	color: #fff;
+}
+.offline .uk-height-viewport {
+	min-height: auto;
+}
+.offline-text-wrapper {
+	margin-left: 10%;
+}
+.offline p {
+	font-size: 24px;
+	color: #FFF;
+}
+.offline h2 {
+	font-family: 'josefin_sansbold';
+	font-size: 48px;
+	color: #FFF;
+	margin-top: 3.53vh;
+
+}
+.offline h1 {
+	font-family: 'josefin_sansbold';
+	font-size: 150px;
+	position: absolute;
+	bottom: -84px;
+	left: 22px;
+	color: rgba(255, 255, 255, .05);
+}
+.offline .logo {
+	margin-bottom: 6.07vh;
+}
+.offline .logo + p {
+	white-space: nowrap;
+}
+
+
+
+
+
+/*		COMMING SOON
+==============================================================
+============================================================== */
+.comming-soon-bg {
+	background-image: url('../../images/images_sport/comming-soon.jpg');
+}
+.comming-soon .uk-height-viewport {
+		min-height: auto;
+	}
+.comming-soon .h-group {
+	padding-top: 60px;
+}
+.comming-soon .h-group h1 {
+	font-family: 'josefin_sansbold';
+	color: rgba(255, 255, 255, .05);
+	font-size: 136px;
+	line-height: 1;
+	bottom: -90px;
+	position: absolute;
+	white-space: nowrap;
+}
+.comming-soon .h-group h2 {
+	font-family: 'josefin_sansbold';
+	color: #FFF;
+	font-size: 48px;
+	line-height: .83;
+	margin-top: 40px;
+	margin-bottom: 0;
+}
+.comming-soon .comming-soon-boxes {
+	padding-top: 50px;
+	margin-top: 100px;
+}
+.comming-soon .title-line-lg {
+	background-color: #FFF;
+}
+
+
+
+/*		MEDIA QUARIES
+==============================================================
+============================================================== */
+@media (min-width: 1300px) {
+	.title-absolute,
+	.title-absolute-about,
+	.title-absolute-classes {
+	    top: 50%;
+	    left: -7px;
+	    margin-left: 0px;
+	    margin-top: -41px;
+	    z-index: 9999;
+	}
+	.title-absolute p, 
+	.title-absolute-about p, 
+	.title-absolute-classes p {
+		font-size: 40px;
+		line-height: 50px;	
+	}
+	.title-absolute .h-3, 
+	.title-absolute-about .h-3, 
+	.title-absolute-classes .h-3 {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 1240px) and (min-width: 1212px) {
+	/*	Slide Navs
+	======================================================*/
+	.uk-slidenav-position  .uk-slidenav-previous {
+		left: 20px;
+	}
+	.uk-slidenav-position  .uk-slidenav-next {
+		right: 20px;
+	}
+}
+
+@media (min-width: 1220px) {
+	.container-fluid {
+		max-width: 100%;
+	    padding: 0 35px;
+	}
+	/*	Comming Soon
+	======================================================*/
+	.comming-soon .h-group h1 {
+		font-size: 100px;
+	}
+}
+@media (max-width: 1170px) {
+	/*	Sport
+	======================================================*/
+	.home-slideshow-sport h1 {
+		font-size: 96px;
+	}
+}
+
+@media (max-width: 1070px) {
+	/*	Wellness
+	======================================================*/
+	.testimonials-wellness figure {
+		display: flex;
+		justify-content: center;
+	}
+	.testimonials-slider-area-wellness {
+		max-width: 800px;
+	}
+	/*	Sport
+	======================================================*/
+	.home-slideshow-sport h1 {
+		font-size: 82px;
+	}
+
+	/*	Yoga
+	======================================================*/
+	.ads-yoga {
+		padding: 50px 0;
+	}
+}
+
+@media (max-width: 1042px) and (min-width: 960px) {
+	/*	Slide Navs
+	======================================================*/
+	.uk-slidenav-position  .uk-slidenav-previous {
+		left: 20px;
+	}
+	.uk-slidenav-position  .uk-slidenav-next {
+		right: 20px;
+	}
+}
+
+@media (min-width: 960px) {
+	
+	.header-cart .uk-dropdown:before {
+		content: '';
+		width: 0;
+		height: 0;
+		position: absolute;
+		top: -7px;
+		left: 50%;
+		margin-left: -2px;
+		border-style: solid;
+		border-width: 0 4px 7px 4px;
+		border-color: transparent transparent #ffffff transparent;
+	}
+
+	/*	Yoga
+	======================================================*/
+	.home-classes-yoga {
+		height: 500px;
+	}
+	.home-classes-img-yoga> img {
+		height: 500px;
+	}
+	.home-classes-img-yoga {
+		margin-left: 50%;
+	}
+	.about-yoga-img {
+		padding-left: 0;
+	}
+}
+@media (max-width: 959px) {
+	/*	Slide Navs
+	======================================================*/
+	.uk-slidenav-position  .uk-slidenav-previous {
+		left: 0px;
+	}
+	.uk-slidenav-position  .uk-slidenav-next {
+		right: 0px;
+	}
+	/*	Wellness
+	======================================================*/
+	.home-slideshow-wellness h1 {
+    	font-size: 120px;
+    	margin: 0 0 18px 0;
+	}
+	.header-breadcrumbs img {
+		padding: 25px 0;
+	}
+	.testimonials-slider-area-wellness {
+		max-width: 600px;
+	}
+	.testimonials-wellness .testimonials-image {
+		padding: 50px 0;
+	}
+
+	.ads-wellness {
+		padding: 25px 0;
+	}
+	.home-slideshow-wellness .uk-dotnav {
+		bottom: 30px;
+	}
+	.subscription-header-wellness {
+		padding-left: 25px;
+	}
+	.shop-display-results .blog-info-list {
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.shop-display-results .uk-form-select {
+		float: left;
+	}
+
+	.shop-display-results .blog-info-list > li {
+		padding: 0;
+		margin: 10px 0;
+		display: block;
+		width: 100%;
+		border: 0; 
+	}
+
+	/*	Sport
+	======================================================*/
+	.clients-quote {
+		margin: 0 0 20px 0;
+	}
+	.client-name {
+		margin: 10px 0 0 0;
+	}
+	.ads-sport-img {
+		padding: 25px 0;
+	}
+	.ads-sport p {
+		padding: 0 25% 0 0;
+	}
+
+	.home-events-sport-image {
+		padding: 50px 0;
+	}
+	.home-trainers-sport {
+		padding: 150px;
+    	background-position: 28% 50%;
+	}
+	.home-slideshow-sport h1 {
+		font-size: 65px;
+		line-height: 1;
+	}
+
+	/*	Yoga
+	======================================================*/
+	.home-classes-yoga > .container-fluid {
+		padding: 0;
+	}
+	.home-classes-yoga .uk-position-cover {
+		position: relative;
+	}
+	.classes-overview-yoga {
+		padding: 50px 0;
+	}
+	.blog-posts-overview {
+		padding-left: 0;
+	}
+	/*	Comming Soon
+	======================================================*/
+	.comming-soon .h-group h1 {
+		font-size: 70px;
+	}
+	.comming-soon .h-group h2 {
+		font-size: 36px;
+	}
+}
+
+
+@media (max-width: 850px) {
+	/*	Sport
+	======================================================*/
+	.testimonials-sport .testimonials-image {
+		padding: 25px 0;
+	}
+}
+
+@media (max-width: 767px) {
+	h1,
+	.h-1 {
+		margin-top: 20px;
+	}
+	.section-padding-top {
+		padding-top: 100px;
+	}
+	.section-padding-bottom {
+		padding-bottom: 100px;
+	}
+	/*	Wellness
+	======================================================*/
+	.header-breadcrumbs img {
+		padding: 50px 0;
+	}
+	.header-breadcrumbs .uk-breadcrumb {
+		margin-bottom: 20px!important;
+	}
+
+	.testimonials-slider-area-wellness {
+		max-width: 500px;
+	}
+	.testimonials-wellness .testimonials-image {
+		padding: 100px 0;
+	}
+	.achivements img {
+		padding: 50px 0;
+	}
+
+	#all-posts-wellness {
+		margin-left: 0;
+	}
+	#all-posts-wellness li {
+		display: block;
+		padding: 5px 0 5px;
+	}
+
+	.ads-wellness {
+		padding: 50px 0;
+	}
+	.package-panel .package-panel-header {
+		height: 50px;
+	}
+	.home-slideshow-wellness h1 {
+		font-size: 100px;
+		margin: 0 0 18px 0;
+		line-height: 1;
+	}
+	.home-slideshow-wellness h3 {
+		font-size: 36px;
+		line-height: 1;
+	}
+	.comments-profile-img {
+    	width: 90px;
+    	margin-bottom: 15px;
+	}	
+
+	/*	Sport
+	======================================================*/
+	.call-action-bg img {
+		padding: 50px 0;
+	}
+	.testimonials-sport .testimonials-image {
+		padding: 50px 0;
+	}
+
+	.ads-sport-img {
+		padding: 95px 0;
+	}
+	.ads-sport p {
+		padding: 0 10% 0 0;
+	}
+	.ads-sport .ads-maintitle-sport {
+		font-size: 44px;
+		padding-left: 10px;
+	}
+	.home-trainers-sport .aside-navigation li {
+		padding: 10px 0;
+	}
+	.home-trainers-sport .h-2 {
+		font-size: 25px;
+	}
+	.home-trainers-sport .aside-navigation {
+		margin: 13px 0 24px;
+	}
+	.home-trainers-sport .btn-custom {
+		height: 30px;
+		max-width: 72px;
+	}
+
+	.home-slideshow-sport h1 {
+		font-size: 45px;
+		line-height: 1;
+	}
+	.home-slideshow-sport h3 {
+		font-size: 20px;
+	}
+	.home-slideshow-sport .slideshow-image {
+		padding: 50px 0;
+	}
+
+	/*	Yoga
+	======================================================*/
+	.yoga-studio {
+		padding: 50px 0 110px 0px;
+	}
+	.testimonials-yoga .testimonials-image {
+		padding: 50px 0;
+	}
+	.testimonials-yoga .uk-dotnav {
+		margin-bottom: 15px;
+	}
+	.ads-yoga {
+		padding: 100px 0;
+	}
+	.ads-yoga p {
+		padding-right: 25%;
+	}
+	.home-slider-yoga h1 {
+		font-size: 40px;
+    	margin: 0 0 20px;
+	}
+	.home-slider-yoga h3 {
+		font-size: 18px;
+	}
+
+	/*	Shopping Bag
+	======================================================*/
+	.calculate-shopping {
+		margin-top: 30px;
+	}
+	.price-total {
+		margin: 0 auto;
+	}
+	.update-bag-btn {
+		margin: 25px 0 0;
+	}
+	.update-bag-btn button {
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+
+	/*	Payment
+	======================================================*/
+	#msform fieldset {
+		padding: 0 0 0 25px;
+	}
+	.payment-confirmation {
+		width: 100%;
+	}
+	/*	Offline
+	======================================================*/
+	.offline h1 {
+		font-size: 100px;
+	}
+
+	
+}
+
+@media (max-width: 650px) {
+	/*	Wellness
+	======================================================*/
+	.home-slideshow-wellness h1 {
+    	font-size: 80px;
+	}
+	.home-slideshow-wellness h3 {
+    	font-size: 24px;
+	}
+	.testimonials-slider-area-wellness {
+		max-width: 400px;
+	}
+	.achivements-counts {
+		font-size: 40px;
+		margin: 0 0 10px 0;
+	}
+	.achivements-titles {
+		font-size: 14px;
+		margin: 10px 0 0 0;
+	}
+	.blog-info h3 {
+		margin: 0;
+	}
+	.blog-info-list {
+		margin: 8px 0;
+	}
+	.ads-wellness {
+		padding: 75px 0;
+	}
+	.ads-wellness p {
+		padding-right: 25%;
+	}
+
+
+	/*	Sport
+	======================================================*/
+	.testimonials-sport .testimonials-image {
+		padding: 75px 0;
+	}
+	.ads-sport-img {
+    	padding: 120px 0;
+	}
+	.ads-sport .h-2 {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.trainer-profile-image {
+		width: 100%;
+	}
+	.trainer-profile-image > img {
+		width: 100%;
+	}
+	.home-events-sport-image {
+		padding: 75px 0;
+	}
+	.home-slideshow-sport h1 {
+		font-size: 35px;
+		line-height: 1;
+	}
+	.home-slideshow-sport h3 {
+		font-size: 18px;
+	}
+	.home-slideshow-sport .slider-header-group {
+		margin-top: 20px;
+	}
+	
+	/*	Yoga
+	======================================================*/
+	.testimonials-yoga .testimonials-image {
+		padding: 75px 0;
+	}
+	.home-slider-yoga .slideshow-image {
+		padding: 50px 0;
+	}
+	/*	Comming Soon
+	======================================================*/
+	.comming-soon .h-group h1 {
+		font-size: 60px;
+		bottom: -65px;
+	}
+	.comming-soon .h-group h2 {
+		font-size: 30px;
+	}
+
+}
+@media (min-width: 768px) {
+	.uk-comment-list .uk-comment+ul {
+    	padding-left: 79px;
+	}
+}
+
+@media (max-width: 767px) and (min-width: 550px) {
+	/*	Slide Navs
+	======================================================*/
+	.posts-thumbnail .uk-slidenav,
+	.classes-thumbnail-sport .uk-slidenav,
+	.classes-thumbnail-yoga .uk-slidenav,
+	.events-thumbnail .uk-slidenav {
+		top: 100px;
+	}
+}
+
+@media (max-width: 550px) {
+	/*	Wellness
+	======================================================*/
+	.testimonials-slider-area-wellness {
+		max-width: 350px;
+	}
+	.blog-info {
+		padding: 0 5px 5px 15px;
+	}
+
+	.ads-wellness {
+		padding: 100px 0;
+	}
+	.ads-wellness p {
+		padding-right: 0%;
+	}
+	.home-slideshow-wellness h1 {
+		font-size: 70px;
+		line-height: 80px;
+		margin: 0;
+	}
+	.home-slideshow-wellness h3 {
+		font-size: 24px;
+	}
+	.home-slideshow-wellness .uk-dotnav {
+		bottom: 15px;
+	}
+	.home-slideshow-wellness .uk-dotnav > * > * {
+		width: 13px;
+		height: 12px;
+	}
+	.home-video img {
+		padding: 50px 0;
+	}
+
+
+	/*	Sport
+	======================================================*/
+	.testimonials-sport .testimonials-image {
+		padding: 100px 0;
+	}
+	.home-trainers-events {
+		display: none;
+	}
+	.home-trainers-slider {
+		width: 100%;
+	}
+	.home-events-sport-image {
+		padding: 35px 0;
+	}
+	.home-slideshow-sport .slider-header-group {
+		margin-top: 40px;
+	}
+	.ads-sport .ads-maintitle-sport {
+    	font-size: 30px;
+    	top: -25px;
+	}
+	/*	Error page
+	============================================= */
+	.error-404 h1 {
+		font-size: 170px;
+	}
+	.error-404 h2 {
+		font-size: 100px!important;
+		margin: 15px 0;
+		line-height: 60px!important;
+	}
+	.error-404 h3 {
+		font-size: 40px!important;
+		margin: 15px 0;
+	}
+	.error-404 p {
+		font-size: 22px;
+		margin: 22px 0 35px;
+	}
+	/*	Comming Soon
+	======================================================*/
+	.comming-soon-bg {
+		background-position: 22% 50%;
+	}
+	.comming-soon .h-group h1 {
+		font-size: 60px;
+		bottom: -126px;
+		white-space: pre-wrap;
+		text-align: center;
+	}
+	.comming-soon .h-group h2 {
+		font-size: 30px;
+	}
+	/*	Offline
+	======================================================*/
+	.offline h1 {
+		font-size: 70px;
+	}
+
+	
+	
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+	.about-slideset .uk-overlay-panel {
+		padding: 30px 10px 12px 20px;
+	}
+}
+
+@media (max-width: 549px) and (min-width: 479px)  {
+	/*	Slide Navs
+	======================================================*/
+	.posts-thumbnail .uk-slidenav,
+	.classes-thumbnail-sport .uk-slidenav,
+	.classes-thumbnail-yoga .uk-slidenav,
+	.events-thumbnail .uk-slidenav {
+		top: 75px;
+	}
+}
+
+@media (max-width: 479px) {
+
+	/*	Commons
+	======================================================*/
+	h2,
+	.h-2 {
+		font-size: 24px!important;
+		line-height: 1.4!important;
+		margin-bottom: 6px!important;
+	}
+	h3,
+	.h-3 {
+		font-size: 18px!important;
+		line-height: 1.4!important;
+		margin-bottom: 5px!important;
+	}
+	h4,
+	.h-4 {
+		font-size: 16px!important;
+		line-height: 1.2!important;
+		margin-bottom: 4px!important;
+	}
+	.mega-footer .h-4 {
+		margin-bottom: 20px!important;
+	}
+	.section-padding-top {
+		padding-top: 60px;
+	}
+	.section-padding-bottom {
+		padding-bottom: 60px;
+	}
+
+
+	/*	Wellness
+	======================================================*/
+	.home-slideshow-wellness h1 {
+	    font-size: 50px;
+	    line-height: 60px;
+	}
+	.header-breadcrumbs img {
+		padding: 75px 0;
+	}
+	.testimonials-slider-area-wellness {
+		max-width: 275px;
+	}
+	.testimonials-wellness .testimonials-image {
+		padding: 150px 0;
+	}
+	.achivements-counts {
+		font-size: 25px;
+	}
+	.achivements-titles {
+		font-size: 12px;
+	}
+
+	/*	Sport
+	======================================================*/
+	.call-action-bg img {
+		padding: 75px 0;
+	}
+	.client-title {
+		margin-bottom: 15px;
+	}
+	.ads-sport-img {
+		padding: 100px 0;
+	}
+	.home-slideshow-sport h1 {
+		font-size: 30px;
+	}
+	.home-slideshow-sport h3 {
+		left: 20px;
+	}
+	.home-slideshow-sport .slider-header-group {
+		margin-left: 40px;
+	}
+	.home-slideshow-sport .slideshow-image {
+		padding: 75px 0;
+	}
+
+
+	/*	Yoga
+	======================================================*/
+
+	.testimonials-yoga .testimonials-image {
+		padding: 100px 0;
+	}
+	.ads-yoga {
+		padding: 150px 0;
+	}
+	.ads-yoga p {
+		padding-right: 15%;
+	}
+	.ads-yoga.uk-cover-background {
+		background-position: 58% 50%;
+	}
+	.home-slider-yoga h1 {
+		font-size: 36px;
+    	margin: 0 0 10px;
+    	line-height: 25px;
+	}
+	.home-slider-yoga .slideshow-image {
+		padding: 75px 0;
+	}
+
+	/*	Payment
+	======================================================*/
+	.payment-confirmation .uk-overlay-panel {
+		width: 100%;
+		padding: 20px;
+	}
+	.payment-confirmation figcaption > div{
+		padding-right: 20px;
+	}
+		/*	Error page
+	============================================= */
+	.error-404 h2 {
+		line-height: 60px!important;
+	}
+	.error-content-wrapper {
+		margin: 0 auto;
+	}
+
+	/*	Offline
+	======================================================*/
+	.offline-text-wrapper {
+		margin: 0;
+	}
+	
+}
+
+@media (max-width: 399px) {
+
+	.header-breadcrumbs img {
+    	padding: 100px 0;
+	}
+	.header-breadcrumbs .h-1 {
+		justify-content: center;
+	}
+	.header-breadcrumbs ul.uk-breadcrumb li {
+		line-height: 24px!important;
+	}
+
+	/*	Slide Navs
+	======================================================*/
+	.posts-thumbnail .uk-slidenav,
+	.classes-thumbnail-sport .uk-slidenav,
+	.classes-thumbnail-yoga .uk-slidenav,
+	.events-thumbnail .uk-slidenav {
+		top: 100px;
+	}
+
+	/*	Wellness
+	======================================================*/
+	.home-slideshow-wellness .uk-dotnav {
+    	bottom: 5px;
+	}
+	.home-slideshow-wellness .slideshow-image {
+		padding: 30px 0;
+	}
+	.testimonials-slider-area-wellness {
+		max-width: 275px;
+		margin-left: 50px;
+	}
+	.achivements-counts {
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.achivements-titles {
+		text-transform: capitalize;
+	}
+	.home-slideshow-wellness h1 {
+		font-size: 45px;
+		line-height: 60px;
+
+	}
+	/*	Sport
+	======================================================*/
+	.call-action-bg {
+		background-position: 17% 50%;
+	}
+	.call-action-bg img {
+		padding: 140px 0;
+	}
+	.testimonials-sport .testimonials-image {
+		padding: 140px 0;
+	}
+	.ads-sport-img {
+		padding: 140px 0;
+	}
+	.home-events-sport-image {
+		padding: 0;
+	}
+
+	/*	Yoga
+	======================================================*/
+
+	.testimonials-yoga .testimonials-image {
+		padding: 150px 0;
+	}
+	.testimonials-yoga .uk-cover-background {
+		background-position: 30% 50%;
+	}
+
+	/*	Shopping Pages
+	======================================================*/
+	#progressbar li span {
+		font-size: 12px;
+	}	
+
+	.price-total {
+		padding: 67px 25px 62px 25px;
+	}
+
+	/*	Error page
+	============================================= */
+	.error-404 h1 {
+		font-size: 120px;
+		top: 18.72vh;
+	}
+	/*	Comming Soon
+	======================================================*/
+	.comming-soon .h-group h1 {
+		font-size: 50px;
+		bottom: -98px;
+	}
+	/*	Offline
+	======================================================*/
+	.offline h1 {
+		font-size: 55px;
+	}
+
+}
+
+
+
+
+
+/* ====================== THE END ======================== */
+
+
+
+

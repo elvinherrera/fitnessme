@@ -1,0 +1,40 @@
+<h1>Make a new Tutorial for your Profile!</h1>
+<% if @tutorial  %>
+<%= form_tag "/tutorials", method: :post do %>
+  <div class="form-group">
+    <label for="title">Enter title:</label>
+    <input class="form-control" placeholder="Title" name="title">
+  </div>
+  <div class="form-group">
+    <label for="description">Enter description here:</label>
+    <input class="form-control" placeholder="Description" name="description">
+  </div>  
+  <div class="form-group">
+    <label for="severity">Enter the severity:</label>
+    <input class="form-control" placeholder="Severity" name="severity">
+  </div>  
+  <div class="form-group">
+    <label for="weights">Enter if it requires weights</label>
+    <input class="form-control" placeholder="True/False" name="weights">
+  </div>  
+  <div class="form-group">
+    <label for="tutorial_type">Enter the type of workout we are committing to!:</label>
+    <input class="form-control" placeholder="Tutorial_type" name="tutorial_type">
+  </div>
+  </div>  <div class="form-group">
+    <label for="experience">Enter the experience needed for this kind of challenge!</label>
+    <input class="form-control" placeholder="experience" name="experience">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+<% end %>
+<% end %>
+<!--  create_table "tutorials", force: :cascade do |t|
+    t.text     "description"
+    t.string   "severity"
+    t.string   "tutorial_type"
+    t.string   "title"
+    t.boolean  "weights"
+    t.string   "experience"
+    t.integer  "video_id"
+    t.integer  "post_id"
+    t.integer  "profile_id" -->

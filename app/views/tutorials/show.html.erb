@@ -1,0 +1,16 @@
+  <section>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="tutorial_single">
+            <h2><%= @tutorial.title %></h2>
+            <p>Description: <%= @tutorial.description %></p>
+           <iframe width="854" height="480" src="https://www.youtube.com/embed/rT7DgCr-3pg" frameborder="0" allowfullscreen></iframe>
+            <% if current_user && current_user.admin %>
+              <%= link_to "Edit", "/tutorials/#{@tutorial.id}/edit", class: "btn btn-success" %>
+              <%= link_to "Delete", "/tutorials/#{@tutorial.id}", {method: :delete, class: "btn btn-danger" }%>
+            <% end %>
+
+        </div>
+      </div>
+    </div>
+</section>

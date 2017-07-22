@@ -1,0 +1,25 @@
+// Place all the styles related to the tutorials controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+ .tutorial_single{
+  background-color: red;
+  background:rgba(139,95,73,0.5);
+  padding:0 15px 15px 15px;
+  color:#FFF;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.35);
+  min-height: 580px;
+  border-radius: 15px;
+  border: solid #575757 4px;
+  margin-bottom: 15px;
+ }
+
+ .tutorial_header{
+  height: 50px;
+ }
+ .title-line-lg {
+  width: 50px;
+  height: 2px;
+  background-color: blue;
+    display: block;
+  padding-left: 1100px;
+}

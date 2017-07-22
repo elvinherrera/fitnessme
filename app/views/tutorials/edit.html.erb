@@ -1,0 +1,57 @@
+<section>
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="product_single">
+        <h1>Edit Workout!</h1>
+        <% if @tutorial.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@tutorial.errors.count, "error") %> prohibited this tutorial from being saved:</h2>
+
+    <ul>
+    <% @tutorial.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_tag "/tutorials/#{@tutorial.id}", method: :patch do %>
+
+<ul>
+  <li>
+    <%= label_tag :title %>
+    <%= text_field_tag :title, @tutorial.title %>
+  </li>
+  <li>
+    <%= label_tag :description %>
+    <%= text_field_tag :description, @tutorial.description %>
+  </li>
+  <li>
+    <%= label_tag :tutorial_type %>
+    <%= text_field_tag :tutorial_type, @tutorial.tutorial_type %>
+  </li>
+  <li>
+    <%= label_tag :weights %>
+    <%= check_box :terms_of_service, @tutorial.weights %>
+  </li>
+  <li>
+    <%= label_tag :equipment %>
+    <%= text_field_tag :equipment, @tutorial.equipment %>
+  </li>
+  <li>
+    <%= label_tag :equipment_description %>
+    <%= text_field_tag :equipment_description, @tutorial.equipment_description %>
+  </li>
+  <li>
+    <%= label_tag :experience %>
+    <%= text_field_tag :experience, @tutorial.experience %>
+  </li>
+</ul>
+
+
+  <%= submit_tag "Submit!" %>
+<% end %>
+          </div>
+        </div>
+      </div>
+    </section>

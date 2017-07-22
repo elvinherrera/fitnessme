@@ -1,0 +1,12 @@
+Here is your Faction List
+
+<% @profile_groups.each do |profile_group| %>
+  <p><%= profile_group.group.name %></p>
+  <p><%= profile_group.status %></p>
+  <%= link_to "Remove this group", "/profile_groups/#{profile_group.id}", method: :delete %>
+<% end %>
+
+
+<%= form_tag "/profile_groups", method: :post do %>
+  <input type="submit" value="Join now!">
+<% end %>

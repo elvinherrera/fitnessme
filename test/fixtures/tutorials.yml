@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  severity: MyString
+  type: 
+  workout: MyString
+  title: MyString
+  goal: MyString
+  intro: MyString
+  outro: MyString
+  weights: false
+  experience: MyString
+  video_id: 1
+
+two:
+  description: MyString
+  severity: MyString
+  type: 
+  workout: MyString
+  title: MyString
+  goal: MyString
+  intro: MyString
+  outro: MyString
+  weights: false
+  experience: MyString
+  video_id: 1

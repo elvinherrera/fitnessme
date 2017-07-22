@@ -1,0 +1,19 @@
+<h1>Make use of our tutorials today! Impress and improve eachother's routine for a healthier tomorrow!</h1>
+ <% @tutorials.each do |tutorial| %>
+    <div class="col-md-4">
+      <div>Title: <%= tutorial.title %></p>
+<hr>
+        <p>Description: <%= tutorial.description %></p>
+<hr>
+        <p>Severity: <%= tutorial.severity %></p>
+<hr>
+        <p>Type: <%= tutorial.tutorial_type %></p>
+<hr>
+        <p>Are weights involved? Answer: <%= tutorial.weights %>!</p>
+<hr>
+        <p>Experience: <%= tutorial.experience %></p>
+<hr>
+<% end %>
+  </div>
+</div>
+

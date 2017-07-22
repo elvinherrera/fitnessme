@@ -1,0 +1,37 @@
+<% if current_user %>
+  <h1>Hello <%= current_user.email %></h1>
+<% end %>
+<!-- <h2><%= @message %></h2> -->
+    <section>
+      <div class="row">
+
+        <% @tutorials.each do |tutorial| %>
+
+          <div class="col-sm-4">
+            <div class="tutorial_single">
+              <a href="/tutorials/<%= tutorial.id %>"><h2 class="tutorial_header"><%= tutorial.title %></h2></a>
+              <p>Description: <%= tutorial.description %></p>
+              <p>Type: <%= tutorial.tutorial_type%></p>
+              <p>Weight requirements: <%= tutorial.weights%></p>
+              <p>Experience required: <%= tutorial.experience%></p>
+              <p>Equipments Needed: <%= tutorial.equipment%></p>       
+              <p>Equipment Description for usage: <%= tutorial.equipment_description%></p>
+
+            </div>
+          </div>
+        <% end %>
+
+      </div>
+    </section>
+<!-- t.text     "description"
+    t.string   "severity"
+    t.string   "tutorial_type"
+    t.string   "title"
+    t.boolean  "weights"
+    t.string   "experience"
+    t.integer  "video_id"
+    t.integer  "post_id"
+    t.integer  "profile_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.string   "equipment" -->
